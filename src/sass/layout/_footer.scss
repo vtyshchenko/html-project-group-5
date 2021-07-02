@@ -1,0 +1,9 @@
+.footer {
+  background-color: $secondary-background-color;
+
+  padding: 22px 0 21px 52px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 22px 0 21px 40px;
+  }
+}

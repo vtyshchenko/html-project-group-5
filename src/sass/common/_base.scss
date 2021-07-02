@@ -1,0 +1,11 @@
+body {
+  font-family: $font-family-montserrat;
+  font-weight: 500;
+  line-height: 20 / 12 * 100%;
+  letter-spacing: 0.08em;
+  color: $main-text-color;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
