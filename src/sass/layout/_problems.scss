@@ -5,6 +5,12 @@
 
   @media screen and (min-width: $tablet) {
     padding-top: 60px;
+    background-image: linear-gradient(to bottom, $main-text-color 68%, $accent-text-color 32%);
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 115px;
+    padding-bottom: 91px;
   }
 }
 .problems__title {
@@ -24,6 +30,10 @@
     padding-left: 2px;
     margin-bottom: 36px;
   }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 63px;
+    font-size: 46px;
+  }
 }
 .problems-grid {
   counter-reset: section;
@@ -32,7 +42,7 @@
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   @media screen and (min-width: $tablet) {
-    padding: 30px 64px 0px 96px;
+    padding: 30px 64px 10px 96px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -41,21 +51,19 @@
 .problems-grid__item {
   position: relative;
 
-  &:nth-child(5) {
-    width: 209px;
-  }
-
   &:not(:last-child) {
-    margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   &:first-child {
-    margin-top: 20px;
+    margin-top: 21px;
   }
 
   &::before {
     position: absolute;
-    top: -20px;
+    top: -26px;
     left: 28px;
     margin-bottom: 5px;
     counter-increment: section;
@@ -67,11 +75,21 @@
   }
 
   @media screen and (min-width: $tablet) {
-    width: calc((100% - 4 * 15px) / 2);
+    width: calc((100% - 4 * 20px) / 2);
+  }
+}
+.problems-grid__item:not(:nth-last-child(-n + 2)) {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
+}
+.problems-grid__item:nth-child(5) {
+  @media screen and (max-width: 320px) {
+    width: 209px;
   }
 }
 .problems-grid__item:nth-child(2) {
-  margin-top: 20px;
+  margin-top: 21px;
 }
 .problems-grid__text {
   position: relative;
@@ -86,5 +104,5 @@
   width: 20px;
   height: 2px;
   background-color: $accent-color;
-  top: -9px;
+  top: -15px;
 }
