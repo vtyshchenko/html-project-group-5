@@ -1,3 +1,24 @@
+.reviews {
+  padding: 50px 0 50px 0;
+}
+
+.review__title {
+  display: block;
+  //   margin-bottom: 42px;
+  text-align: center;
+  margin: 0 auto 42px auto;
+
+  width: 176px;
+
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+
+  letter-spacing: 0.03em;
+
+  color: #111518;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,7 +30,15 @@
 
 /* Скрыть изображения по умолчанию */
 .mySlides {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.slide__image {
+  display: block;
+  margin-bottom: 20px;
 }
 
 /* Добавить указатель при наведении на миниатюры изображений */
@@ -27,7 +56,7 @@
   padding: 16px;
   margin-top: -50px;
   color: white;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -58,9 +87,46 @@
 /* Контейнер для текста изображения */
 .caption-container {
   text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
+  //   background-color: #222;
+  padding: 0 20px;
+}
+
+.name {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17 / 14 * 100%;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: $accent-color;
+  margin-bottom: 10px;
+}
+
+.slide__description {
+  padding-bottom: 30px;
+}
+
+.graduated {
+  width: 240px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  color: #b9b9b9;
+  margin: 0 auto 25px auto;
+}
+
+.biography {
+  width: 240px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20 / 12 * 100%;
+  text-align: center;
+  color: #3d3d3d;
+  margin: 0 auto 40px auto;
 }
 
 .row:after {
@@ -72,12 +138,13 @@
 /* Шесть колонн бок о бок */
 .column {
   float: left;
-  width: 16.66%;
+  width: 12.5%;
 }
 
 /* Добавить эффект прозрачности для миниатюрных изображений */
 .demo {
   opacity: 0.6;
+  width: 90px;
 }
 
 .active,
