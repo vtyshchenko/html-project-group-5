@@ -39,6 +39,7 @@
 .slide__image {
   display: block;
   margin-bottom: 20px;
+  border: none;
 }
 
 /* Добавить указатель при наведении на миниатюры изображений */
@@ -129,6 +130,13 @@
   margin: 0 auto 40px auto;
 }
 
+.row {
+  padding-right: 44px;
+  padding-left: 44px;
+  width: 290px;
+  margin: 0 auto;
+}
+
 .row:after {
   content: '';
   display: table;
@@ -138,13 +146,15 @@
 /* Шесть колонн бок о бок */
 .column {
   float: left;
-  width: 12.5%;
+  // width: 12.5%;
+  // width: 54px;
+  margin-right: 10px;
 }
 
 /* Добавить эффект прозрачности для миниатюрных изображений */
 .demo {
   opacity: 0.6;
-  width: 90px;
+  width: 54px;
 }
 
 .active,
