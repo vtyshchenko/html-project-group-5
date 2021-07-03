@@ -1,0 +1,52 @@
+.problems {
+  padding-top: 27px;
+  padding-bottom: 25px;
+  background-image: linear-gradient(to bottom, $main-text-color 74%, $accent-text-color 26%);
+}
+.problems__title {
+  margin-bottom: 24px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+
+  color: $accent-text-color;
+}
+.problems__title--accent {
+  color: $accent-color;
+}
+.problems-grid {
+  counter-reset: section;
+  background-color: $accent-text-color;
+  padding: 20px 13px 4px 30px;
+}
+.problems-grid__item {
+  margin-bottom: 10px;
+
+  &::before {
+    margin-bottom: 5px;
+
+    counter-increment: section;
+    content: '0' counter(section);
+
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: $accent-color;
+  }
+}
+.problems-grid__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+}
+// .problems-grid__item::after {
+//   display: block;
+//   content: '';
+//   width: 25px;
+//   height: 4px;
+//   top: 12px;
+//   left: -35px;
+//   color: $accent-color;
+// }
