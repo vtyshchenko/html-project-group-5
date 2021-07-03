@@ -2,6 +2,10 @@
   padding-top: 27px;
   padding-bottom: 25px;
   background-image: linear-gradient(to bottom, $main-text-color 75.8%, $accent-text-color 24.2%);
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+  }
 }
 .problems__title {
   margin-bottom: 24px;
@@ -15,15 +19,32 @@
   &--accent {
     color: $accent-color;
   }
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 2px;
+    margin-bottom: 36px;
+  }
 }
 .problems-grid {
   counter-reset: section;
   background-color: $accent-text-color;
   padding: 20px 13px 4px 30px;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @media screen and (min-width: $tablet) {
+    padding: 30px 64px 0px 96px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 .problems-grid__item {
   position: relative;
+
+  &:nth-child(5) {
+    width: 209px;
+  }
+
   &:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -35,15 +56,22 @@
   &::before {
     position: absolute;
     top: -20px;
-    left: 31px;
+    left: 28px;
     margin-bottom: 5px;
     counter-increment: section;
     content: '0' counter(section);
     font-weight: bold;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     color: $accent-color;
   }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 4 * 15px) / 2);
+  }
+}
+.problems-grid__item:nth-child(2) {
+  margin-top: 20px;
 }
 .problems-grid__text {
   position: relative;
@@ -56,7 +84,7 @@
   position: absolute;
   content: '';
   width: 20px;
-  height: 3px;
+  height: 2px;
   background-color: $accent-color;
   top: -9px;
 }
