@@ -9,13 +9,13 @@
     margin: 0 auto;
   }
 
-  @media screen and (min-wifth: $tablet) {
+  @media screen and (min-width: $tablet) {
     width: $tablet;
 
     padding: 0 40px;
   }
 
-  @media screen and (min-wifth: $desktop) {
+  @media screen and (min-width: $desktop) {
     width: $desktop;
 
     padding: 0 184px;
