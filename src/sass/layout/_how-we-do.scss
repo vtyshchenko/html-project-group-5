@@ -1,4 +1,7 @@
 .how-we-do {
+  padding-top: 25px;
+  padding-bottom: 50px;
+
   &__title {
     font-weight: 800;
     font-size: 20px;
@@ -9,20 +12,42 @@
 
   &__item {
     text-align: center;
+    height: 280px;
+    padding: 30px 5px 0 5px;
+    background: $main-background-color;
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
     &:not(:last-child) {
       margin-bottom: 15px;
     }
   }
 
+  &__icon {
+    fill: $accent-color;
+  }
+
   &__subtitle {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 14px;
     line-height: 2;
-    margin-bottom: 42px;
+
+    &::after {
+      display: block;
+      content: '';
+      width: 20px;
+      height: 2px;
+      margin: 15px auto;
+      background-color: $accent-color;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    color: $secondary-text-color;
   }
 }
 
 .icon-wrapper {
   //   @extend %flex__center;
-  margin-bottom: 20px;
+  //   margin-bottom: 20px;
 }
