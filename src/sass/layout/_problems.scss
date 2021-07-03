@@ -1,7 +1,7 @@
 .problems {
   padding-top: 27px;
   padding-bottom: 25px;
-  background-image: linear-gradient(to bottom, $main-text-color 74%, $accent-text-color 26%);
+  background-image: linear-gradient(to bottom, $main-text-color 75.8%, $accent-text-color 24.2%);
 }
 .problems__title {
   margin-bottom: 24px;
@@ -11,42 +11,52 @@
   letter-spacing: 0.03em;
 
   color: $accent-text-color;
-}
-.problems__title--accent {
-  color: $accent-color;
+
+  &--accent {
+    color: $accent-color;
+  }
 }
 .problems-grid {
   counter-reset: section;
   background-color: $accent-text-color;
   padding: 20px 13px 4px 30px;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 .problems-grid__item {
-  margin-bottom: 10px;
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &:first-child {
+    margin-top: 20px;
+  }
 
   &::before {
+    position: absolute;
+    top: -20px;
+    left: 31px;
     margin-bottom: 5px;
-
     counter-increment: section;
     content: '0' counter(section);
-
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-
     color: $accent-color;
   }
 }
 .problems-grid__text {
+  position: relative;
   font-weight: 700;
   font-size: 14px;
   line-height: 2;
 }
-// .problems-grid__item::after {
-//   display: block;
-//   content: '';
-//   width: 25px;
-//   height: 4px;
-//   top: 12px;
-//   left: -35px;
-//   color: $accent-color;
-// }
+.problems-grid__text::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 3px;
+  background-color: $accent-color;
+  top: -9px;
+}
