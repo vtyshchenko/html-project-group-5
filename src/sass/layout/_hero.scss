@@ -12,14 +12,17 @@
 }
 
 .hero__title-wrapper {
-  width: 280px;
+  max-width: 280px;
   height: 80px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 }
-
 .description {
+  max-width: 280px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
 }
 .description__decor-one {
@@ -28,14 +31,12 @@
   line-height: 1.57;
   letter-spacing: 0.08em;
   color: $secondary-text-color;
-  display: flex;
   align-items: center;
 }
 .description__decor-two {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.57;
-  display: flex;
   align-items: center;
   letter-spacing: 0.08em;
   color: $main-text-color;
@@ -44,7 +45,6 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.57;
-  display: flex;
   align-items: center;
   letter-spacing: 0.08em;
   color: $accent-color;
