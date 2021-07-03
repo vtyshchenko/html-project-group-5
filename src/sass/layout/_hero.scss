@@ -10,8 +10,16 @@
   letter-spacing: 0.03em;
   color: $main-text-color;
 }
+
+.hero__title-wrapper {
+  width: 280px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
 .description {
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 .description__decor-one {
@@ -42,9 +50,9 @@
   color: $accent-color;
 }
 
-.hero__title-wrapper {
-  width: 280px;
-  height: 80px;
+.lesson__button {
+  display: block;
+  margin: 0 auto;
 }
 
 .hero__main-wrapper {
