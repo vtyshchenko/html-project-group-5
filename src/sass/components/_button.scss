@@ -1,6 +1,7 @@
 .lesson__button {
   @extend %buttons;
   border: none;
+  justify-content: center;
 }
 
 .mobile-menu__button {
