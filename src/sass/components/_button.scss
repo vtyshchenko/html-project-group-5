@@ -1,10 +1,12 @@
-.lesson__button {
+.button__lesson {
   @extend %buttons;
   border: none;
   justify-content: center;
+  display: block;
+  margin: 0 auto;
 }
 
-.mobile-menu__button {
+.button__mobile-menu {
   @extend %buttons;
   color: $accent-color;
   background-color: transparent;

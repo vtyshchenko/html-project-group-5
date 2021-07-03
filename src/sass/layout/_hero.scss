@@ -34,6 +34,7 @@
   align-items: center;
 }
 .description__decor-two {
+  width: 245px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.57;
@@ -48,11 +49,6 @@
   align-items: center;
   letter-spacing: 0.08em;
   color: $accent-color;
-}
-
-.lesson__button {
-  display: block;
-  margin: 0 auto;
 }
 
 .hero__main-wrapper {
