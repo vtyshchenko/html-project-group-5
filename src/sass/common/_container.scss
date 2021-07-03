@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+  // max-width: 320px;
+  width: 100vw;
+  padding: 0 20px;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-wifth: $tablet) {
+    width: $tablet;
+
+    padding: 0 40px;
+  }
+
+  @media screen and (min-wifth: $desktop) {
+    width: $desktop;
+
+    padding: 0 184px;
+  }
+}

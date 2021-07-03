@@ -1,0 +1,10 @@
+.lesson__button {
+  @extend %buttons;
+  border: none;
+}
+
+.mobile-menu__button {
+  @extend %buttons;
+  color: $accent-color;
+  background-color: transparent;
+}
