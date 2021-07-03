@@ -1,0 +1,23 @@
+.advantages {
+  padding-top: 30px;
+  padding-bottom: 44px;
+}
+.advantages-wrapper {
+  width: 216px;
+  height: 245px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.advantages__paragraph {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.61;
+  align-items: center;
+  letter-spacing: 0.08em;
+  color: $main-text-color;
+}
