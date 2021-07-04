@@ -45,6 +45,13 @@
       var slideIndex = 1;
       showSlides(slideIndex);
 
+      function showMore() {
+        //removes the link
+        document.getElementById('link').parentElement.removeChild('link');
+        //shows the #more
+        document.getElementById('more').style.display = 'block';
+      }
+
       function plusSlides(n) {
         showSlides((slideIndex += n));
       }
@@ -102,6 +109,34 @@
         );
         dots[slideIndex - 1].className += ' active';
         dots[slideIndex - 1].style.width = '64px';
+      }
+    </script>
+
+    <script>
+      function showMore(id) {
+        document.getElementById(id + 'Overflow').className = '';
+        document.getElementById(id + 'MoreLink').className = 'hidden';
+        document.getElementById(id + 'LessLink').className = '';
+      }
+
+      function showLess(id) {
+        document.getElementById(id + 'Overflow').className = 'hidden';
+        document.getElementById(id + 'MoreLink').className = '';
+        document.getElementById(id + 'LessLink').className = 'hidden';
+      }
+
+      var len = 1000;
+      var shrinkables = document.getElementsByClassName('shrinkable');
+      if (shrinkables.length > 0) {
+        for (var i = 0; i < shrinkables.length; i++) {
+          var fullText = shrinkables[i].innerHTML;
+          if (fullText.length > len) {
+            var trunc = fullText.substring(0, len).replace(/\w+$/, '');
+            var remainder = '';
+            var id = shrinkables[i].id;
+            remainder = fullText.substring(len, fullText.length);
+          }
+        }
       }
     </script>
   </body>

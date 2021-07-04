@@ -155,8 +155,6 @@
 /* Шесть колонн бок о бок */
 .column {
   float: left;
-  // width: 12.5%;
-  // width: 54px;
   margin-right: 10px;
 }
 
@@ -169,4 +167,8 @@
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+.hidden {
+  display: none;
 }
