@@ -14,18 +14,39 @@
   &__item {
     padding: 30px 5px 0 5px;
     text-align: center;
-    background: $main-background-color;
+    background-color: $main-background-color;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+    transition: background-color $anim-duration $anim-timing-function;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      transform: scale(1.05);
+    }
   }
 
   &__icon {
     fill: $accent-color;
+    transition: fill $anim-duration $anim-timing-function,
+      transform $anim-duration $anim-timing-function;
+
+    .how-we-do__item:hover &,
+    .how-we-do__item:focus & {
+      fill: $accent-text-color;
+      transform: rotateY(360deg);
+    }
   }
 
   &__subtitle {
     font-weight: 700;
     font-size: 14px;
     line-height: 2;
+    transition: color $anim-duration $anim-timing-function;
+
+    .how-we-do__item:hover &,
+    .how-we-do__item:focus & {
+      color: $accent-text-color;
+    }
 
     &::after {
       display: block;
@@ -34,12 +55,24 @@
       height: 2px;
       margin: 15px auto;
       background-color: $accent-color;
+      transition: background-color $anim-duration $anim-timing-function;
+
+      .how-we-do__item:hover &,
+      .how-we-do__item:focus & {
+        background-color: $accent-text-color;
+      }
     }
   }
 
   &__text {
     font-size: 12px;
     color: $secondary-text-color;
+    transition: color $anim-duration $anim-timing-function;
+
+    .how-we-do__item:hover &,
+    .how-we-do__item:focus & {
+      color: $accent-text-color;
+    }
   }
 }
 
