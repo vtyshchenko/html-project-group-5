@@ -69,9 +69,9 @@
 @media screen and (min-width: 768px) {
   .advantages__list {
     width: 100%;
+    display: flex;
   }
   .advantages__item {
-    display: flex;
     align-items: center;
   }
   .advantages__paragraph-adapted {
@@ -85,6 +85,9 @@
 }
 
 @media screen and (min-width: 1366px) {
+  .advantages__wrapper {
+    max-width: 1344px;
+  }
   .advantages__paragraph-adapted::before {
     width: 117px;
     height: 102px;
@@ -104,16 +107,16 @@
   }
 
   .advantages__paragraph-adapted {
-    width: 448px;
+    width: 333px;
     margin-right: unset;
   }
   .advantages__paragraph-modern {
-    width: 448px;
+    width: 322px;
     margin-right: unset;
   }
 
   .advantages__paragraph-financial {
-    width: 448px;
+    width: 336px;
     margin-right: unset;
   }
 }
