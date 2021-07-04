@@ -1,3 +1,42 @@
 .header {
   background-color: $main-background-color;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__mobile-burger-button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__mobile-burger-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.nav-menu {
+  display: none;
+}
+
+// before 768
+@media screen and (max-width: 767px) {
+  .header {
+    &__button {
+      display: none;
+    }
+  }
 }

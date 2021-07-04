@@ -16,8 +16,8 @@
   color: $accent-text-color;
   background: $accent-color;
 
-  width: 259px;
-  height: 20px;
+  width: 260px;
+  height: 48px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -30,8 +30,8 @@
     cursor: pointer;
   }
 
-  @media screen and (min-width: $tablet) {
-    width: 260px;
-    height: 48px;
+  @media screen and (min-width: $desktop) {
+    width: 354px;
+    height: 70px;
   }
 }
