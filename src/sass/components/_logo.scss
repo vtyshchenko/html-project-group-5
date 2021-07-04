@@ -36,3 +36,23 @@
     height: 20px;
   }
 }
+
+// 768+
+@media screen and (min-width: $tablet) {
+  .logo {
+    &__link {
+      font-size: 26px;
+      line-height: 1.23;
+    }
+
+    &__text-second-line {
+      font-size: 8px;
+      line-height: 1.25;
+    }
+
+    &__img {
+      width: 22px;
+      height: 30px;
+    }
+  }
+}

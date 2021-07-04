@@ -1,8 +1,6 @@
 <!-- header -->
 <header class="header">
     <div class="container header__container">
-        <!-- navigation -->
-        <nav class="header__nav">
             <!-- logo -->
             <include src="./partials/logo.html"></include>
             <!-- <a class="logo logo__link link" href="#">
@@ -31,30 +29,34 @@
                     english
                 </p>
             </a> -->
-            <!-- navigation list -->
-            <ul class="nav-menu list">
-                <li class="nav-menu__item">
-                    <a class="nav-menu__link link" href="#">Studying program</a>
-                </li>
-                <li class="nav-menu__item">
-                    <a class="nav-menu__link link" href="#">about</a>
-                </li>
-                <li class="nav-menu__item">
-                    <a class="nav-menu__link link" href="#">training options</a>
-                </li>
-                <li class="nav-menu__item">
-                    <a class="nav-menu__link link" href="#">contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- button for consultation -->
-        <button class="button header__button" type="button">consultation by phone</button>
-        <!-- button for open mobile menu window -->
-        <button class="header__mobile-burger-button" type="button" data-menu-button>
-            <svg class="header__mobile-burger-icon" width="30" height="30">
-                <use href="./images/icons.svg#mobile-burger-icon"></use>
-            </svg>
-        </button>
+        <div class="header__content-wrapper">
+            <!-- navigation -->
+            <nav class="header__nav">
+                <!-- navigation list -->
+                <ul class="nav-menu list">
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link link" href="#">Studying program</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link link" href="#">about</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link link" href="#">training options</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__link link" href="#">contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- button for consultation -->
+            <button class="button header__button" type="button">consultation by phone</button>
+            <!-- button for open mobile menu window -->
+            <button class="header__mobile-burger-button" type="button" data-menu-button>
+                <svg class="header__mobile-burger-icon" width="30" height="30">
+                    <use href="./images/icons.svg#mobile-burger-icon"></use>
+                </svg>
+            </button>
+        </div>
     </div>
     <!-- mobile menu window -->
     <div class="mobile-menu" data-menu>
