@@ -11,9 +11,8 @@
   }
 
   &__item {
-    text-align: center;
-    height: 280px;
     padding: 30px 5px 0 5px;
+    text-align: center;
     background: $main-background-color;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
 
@@ -48,6 +47,14 @@
 }
 
 .icon-wrapper {
-  //   @extend %flex__center;
-  //   margin-bottom: 20px;
+  @extend %flex__center;
+  margin-bottom: 19px;
+}
+
+@media screen and (max-width: $tablet - 1px) {
+  .how-we-do__item {
+    max-width: 280px;
+    min-height: 280px;
+    margin: 0 auto;
+  }
 }
