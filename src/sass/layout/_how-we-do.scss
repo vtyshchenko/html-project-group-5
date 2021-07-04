@@ -16,7 +16,8 @@
     text-align: center;
     background-color: $main-background-color;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-    transition: background-color $anim-duration $anim-timing-function;
+    transition: background-color $anim-duration $anim-timing-function,
+      transform $anim-duration $anim-timing-function;
 
     &:hover,
     &:focus {
