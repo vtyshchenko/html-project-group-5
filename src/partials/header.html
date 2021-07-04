@@ -4,14 +4,17 @@
         <!-- navigation -->
         <nav class="header__nav">
             <!-- logo -->
-            <a class="logo logo-white" href="#">
+            <a class="logo logo__link link" href="#">
                 <!-- <include src="./partials/logo.html"></include> -->
-                <p><span>Hell</span>
-                    <img src="./images/header/logo-fire.png" alt="small fire logo">
-                    <span>EN</span>
-                    <span>hellish</span>
-                    <span>english</span>
-                </p>
+                <div class="logo__wrapper">
+                    <span class="logo__color-first">Hell&#160;</span>
+                    <img class="logo__img" src="./images/header/logo-fire.png" alt="small fire logo">
+                    <span class="logo__color-first">&#160;EN</span>
+                </div>
+                <div class="logo__wrapper">
+                    <span class="logo__color-second">hellish&#160;</span>
+                    <span class="logo__color-first">english</span>
+                </div>
             </a>
             <!-- navigation list -->
             <ul class="nav-menu list">
@@ -30,7 +33,7 @@
             </ul>
         </nav>
         <!-- button for consultation -->
-        <button class="button" type="button">consultation by phone</button>
+        <button class="button header__button" type="button">consultation by phone</button>
         <!-- button for open mobile menu window -->
         <button class="header__mobile-burger-button" type="button" >
             <svg class="header__mobile-berger-icon" width="30" height="30">

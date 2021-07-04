@@ -1,3 +1,42 @@
 .header {
   background-color: $main-background-color;
+  &__button {
+    display: none;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  &__link {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+    color: $main-text-color;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__color-first {
+  }
+
+  &__color-second {
+  }
+}
+
+.nav-menu {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
 }
