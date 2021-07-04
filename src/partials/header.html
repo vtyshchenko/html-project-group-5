@@ -4,18 +4,18 @@
         <!-- navigation -->
         <nav class="header__nav">
             <!-- logo -->
-            <a class="logo logo__link link" href="#">
-                <!-- <include src="./partials/logo.html"></include> -->
-                <div class="logo__wrapper">
-                    <span class="logo__color-first">Hell&#160;</span>
+            <include src="./partials/logo.html"></include>
+            <!-- <a class="logo logo__link link" href="#">
+                <p class="logo__text-first-line">
+                    <span>Hell</span>
                     <img class="logo__img" src="./images/header/logo-fire.png" alt="small fire logo">
-                    <span class="logo__color-first">&#160;EN</span>
-                </div>
-                <div class="logo__wrapper">
-                    <span class="logo__color-second">hellish&#160;</span>
-                    <span class="logo__color-first">english</span>
-                </div>
-            </a>
+                    <span>EN</span>
+                </p>
+                <p class="logo__text-second-line">
+                    <span class="logo__color-text">hellish</span>
+                    english
+                </p>
+            </a> -->
             <!-- navigation list -->
             <ul class="nav-menu list">
                 <li class="nav-menu__item">
@@ -35,14 +35,14 @@
         <!-- button for consultation -->
         <button class="button header__button" type="button">consultation by phone</button>
         <!-- button for open mobile menu window -->
-        <button class="header__mobile-burger-button" type="button" >
+        <button class="header__mobile-burger-button" type="button" data-menu-button>
             <svg class="header__mobile-berger-icon" width="30" height="30">
                 <use href="./images/icons.svg#mobile-berger-icon"></use>
             </svg>
         </button>
     </div>
     <!-- mobile menu window -->
-    <div class="mobile-menu">
+    <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
             <!-- button for close mobile menu window -->
             <button class="mobile-menu__close-buton" type="button">

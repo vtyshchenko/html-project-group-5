@@ -1,0 +1,36 @@
+.logo {
+  &__link {
+    display: block;
+
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.04em;
+    color: $main-text-color;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__text-first-line {
+    display: inline-block;
+  }
+
+  &__text-second-line {
+    font-weight: 700;
+    font-size: 5px;
+    line-height: 1.2;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  &__color-text {
+    color: $accent-color;
+  }
+
+  &__img {
+    display: inline-block;
+    width: 14px;
+    height: 20px;
+  }
+}
