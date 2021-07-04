@@ -47,16 +47,24 @@
   cursor: pointer;
 }
 
+.arrow {
+  display: block;
+  width: 25px;
+  height: 20px;
+  border: none;
+  outline: none;
+}
+
 /* Вперед и предыдущие кнопки */
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  bottom: 0%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: aqua;
   font-weight: 700;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
