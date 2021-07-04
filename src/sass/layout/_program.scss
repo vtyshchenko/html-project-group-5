@@ -17,12 +17,16 @@
   padding-left: 100px;
   padding-right: 4px;
   &__item {
+    margin-bottom: 40px;
     font-weight: 700;
     font-size: 14px;
     line-height: 2;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: $accent-text-color;
+  }
+  &__title {
+    margin-bottom: 5px;
   }
 }
 .program-list-second {
@@ -32,18 +36,24 @@
     line-height: 1.67;
     letter-spacing: 0.08em;
     text-transform: none;
-    color: #ff6b09;
+    color: $accent-color;
   }
   &__title {
     margin-bottom: 5px;
   }
 }
+// .program-list-second__title::before {
+//   width: 20px;
+//   height: 20px;
+//   background-color: #ff6b09;
+// }
 .program-list-third {
+  margin-bottom: 8px;
   &__item {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
-    color: #b9b9b9;
+    color: $secondary-text-color;
     opacity: 0.5;
   }
 }
