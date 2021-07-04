@@ -115,14 +115,15 @@
     <script>
       function showMore(id) {
         document.getElementById(id + 'Overflow').className = '';
-        document.getElementById(id + 'MoreLink').className = 'hidden';
-        document.getElementById(id + 'LessLink').className = '';
+        document.getElementById(id + 'MoreLink').className = 'link-text-toggle hidden';
+        document.getElementById(id + 'dots').className = 'hidden';
+        document.getElementById(id + 'LessLink').className = 'link-text-toggle';
       }
 
       function showLess(id) {
         document.getElementById(id + 'Overflow').className = 'hidden';
-        document.getElementById(id + 'MoreLink').className = '';
-        document.getElementById(id + 'LessLink').className = 'hidden';
+        document.getElementById(id + 'MoreLink').className = 'link-text-toggle';
+        document.getElementById(id + 'LessLink').className = 'link-text-toggle hidden';
       }
 
       var len = 1000;

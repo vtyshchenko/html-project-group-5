@@ -53,35 +53,38 @@
   height: 20px;
   border: none;
   outline: none;
+  fill: currentColor;
 }
 
 /* Вперед и предыдущие кнопки */
 .prev,
 .next {
+  background-color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: $accent-color;
+
   cursor: pointer;
   position: absolute;
-  bottom: 0%;
+  bottom: 1%;
   width: auto;
-  padding: 16px;
+  padding: 12px 0;
   margin-top: -50px;
-  color: aqua;
-  font-weight: 700;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
+  border-radius: 50%;
 }
 
 /* Позиция "next кнопка" на право */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  margin-right: 20px;
 }
 
 /* При наведении курсора добавьте черный цвет фона с небольшим количеством прозрачного */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Номера текст (1/3 и т.д.) */
@@ -171,4 +174,8 @@
 
 .hidden {
   display: none;
+}
+
+.link-text-toggle {
+  color: $accent-color;
 }
