@@ -62,7 +62,7 @@
 
       function showSlides(n) {
         var i;
-        var slides = document.getElementsByClassName('mySlides');
+        var slides = document.getElementsByClassName('reviews__slides');
         var dots = document.getElementsByClassName('demo');
         var miniat = document.getElementsByClassName('column');
         if (n > slides.length) {
@@ -78,7 +78,6 @@
           var index = dots[i].className.indexOf(' visually-hidden');
           if (index < 0) {
             dots[i].className += ' visually-hidden';
-            dots[i].style.width = '54px';
           }
         }
 
@@ -108,7 +107,6 @@
           '',
         );
         dots[slideIndex - 1].className += ' active';
-        dots[slideIndex - 1].style.width = '64px';
       }
     </script>
 
