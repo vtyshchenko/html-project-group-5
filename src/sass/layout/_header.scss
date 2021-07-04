@@ -1,8 +1,5 @@
 .header {
   background-color: $main-background-color;
-  &__button {
-    display: none;
-  }
 
   &__container {
     display: flex;
@@ -27,10 +24,19 @@
   }
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .nav-menu {
   display: none;
 }
 
-.mobile-menu {
-  display: none;
+// before 768
+@media screen and (max-width: 767px) {
+  .header {
+    &__button {
+      display: none;
+    }
+  }
 }
