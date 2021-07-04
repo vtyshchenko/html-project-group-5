@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 50px;
+  padding-top: 25px;
   padding-bottom: 30px;
 }
 
@@ -12,16 +12,11 @@
 }
 
 .hero__image {
-  margin-top: -157px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 48px;
+  width: 100%;
 }
 
 .hero__image-shadow {
-  margin-top: 30px;
-  margin-left: 33px;
-  margin-right: auto;
+  width: 100%;
 }
 
 .hero__title-wrapper {
@@ -62,4 +57,17 @@
   align-items: center;
   letter-spacing: 0.08em;
   color: $accent-color;
+}
+
+.hero__main-wrapper {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 48px;
+  background-image: url(../images/hero/hero-mobile.png), url(../images/hero/hero-shadow-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 50%;
+  background-position-y: 50%;
 }
