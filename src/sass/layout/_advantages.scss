@@ -48,7 +48,7 @@
 
 .advantages__paragraph-modern::before {
   content: '';
-  width: 107px;
+  width: 74px;
   height: 60px;
   background-image: url(../images/advantages/modern-teaching.svg);
   background-size: contain;
@@ -86,24 +86,21 @@
 
 @media screen and (min-width: 1366px) {
   .advantages__paragraph-adapted::before {
-    width: 177px;
+    width: 117px;
     height: 102px;
+    margin-right: -25px;
   }
 
   .advantages__paragraph-modern::before {
-    width: 163px;
+    width: 100px;
     height: 102px;
-    margin-right: unset;
+    margin-right: -14px;
   }
 
   .advantages__paragraph-financial::before {
-    .advantages__list {
-      width: 1344px;
-    }
-
-    width: 167px;
+    width: 104px;
     height: 102px;
-    margin-right: unset;
+    margin-right: -14px;
   }
 
   .advantages__paragraph-adapted {
