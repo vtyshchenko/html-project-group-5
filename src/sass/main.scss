@@ -5,9 +5,22 @@
 @import './common/base';
 @import './common/container';
 @import './common/section';
+@import './utils/mixins';
 @import './utils/placeholders';
 
 @import './components/button';
+@import './components/logo';
+@import './components/social-icons-list';
 
 @import './layout/header';
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/problems';
+@import './layout/how-we-do';
+@import './layout/program';
+@import './layout/benefits';
+@import './layout/about';
+@import './layout/guarantee';
+@import './layout/reviews';
+@import './layout/contacts';
 @import './layout/footer';

@@ -1,0 +1,5 @@
+@mixin settings__icons($fill, $width, $height) {
+  fill: $fill;
+  width: $width;
+  height: $height;
+}

@@ -24,11 +24,13 @@
     text-transform: uppercase;
   }
 
-  &__color-text {
+  &__text-second-line--color {
     color: $accent-color;
   }
 
   &__img {
+    position: relative;
+    top: 3px;
     display: inline-block;
     width: 14px;
     height: 20px;
