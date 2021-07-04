@@ -1,16 +1,49 @@
 .footer {
   padding: 0;
   width: auto;
-
-  // &__logo {}
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 56px;
+  }
 
   &__content {
     padding: 30px 60px;
     background-color: $main-background-color;
     text-align: center;
+
     @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
       display: flex;
       justify-content: space-between;
+      padding: 40px;
+      text-align: left;
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 570px 0 183px;
+      text-align: left;
+    }
+  }
+  .logo__link {
+    padding: 0;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      margin: 0 203px 0 0;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 103px 0 53px 0;
+      margin: 0;
+    }
+  }
+  &__contacts {
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+      padding: 126px 0 35px 0;
     }
   }
 
@@ -25,16 +58,26 @@
     color: $main-text-color;
     width: 100%;
     margin-bottom: 30px;
+
     @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
       font-size: 20px;
       line-height: 1.22;
+      padding-right: 24px;
+      margin-right: 24px;
+      letter-spacing: 0.08em;
+      margin-bottom: 0;
+      border-right: 1px solid $secondary-text-color;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 30px;
+      line-height: 1.22;
+      letter-spacing: 0.08em;
+      border-right: 1px solid $secondary-text-color;
+      padding-right: 16px;
       margin-right: 24px;
       margin-bottom: 0;
     }
   }
-  // &__social-contacts {
-
-  // }
 
   &__copyright {
     background-color: $secondary-background-color;
@@ -64,11 +107,18 @@
   height: 20px;
   fill: $accent-color;
   margin-right: 10px;
+
   @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
     width: 24px;
     height: 24px;
   }
+  @media screen and (min-width: $desktop) {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
 }
+
 .social-contacts__link {
   display: block;
   background-image: url(../images/instagram.png);
