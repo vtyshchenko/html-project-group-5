@@ -42,11 +42,14 @@
     margin-bottom: 5px;
   }
 }
-// .program-list-second__title::before {
-//   width: 20px;
-//   height: 20px;
-//   background-color: #ff6b09;
-// }
+.program-list-second__item::before {
+  content: '';
+  position: absolute;
+  left: 101px;
+  width: 12px;
+  height: 2px;
+  background-color: $accent-color;
+}
 .program-list-third {
   margin-bottom: 8px;
   &__item {
