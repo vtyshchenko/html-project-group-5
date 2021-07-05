@@ -1,5 +1,5 @@
 .problems {
-  padding-top: 27px;
+  padding-top: 25px;
   padding-bottom: 25px;
   background-image: linear-gradient(to bottom, $main-text-color 75.8%, $accent-text-color 24.2%);
 
@@ -10,21 +10,21 @@
 
   @media screen and (min-width: $desktop) {
     background: url(../images/campfire.svg),
-      linear-gradient(to bottom, $main-text-color 68%, $accent-text-color 32%);
-    background-position: 1100px 82px, 0px;
+      linear-gradient(to bottom, $main-text-color 73%, $accent-text-color 32%);
+    background-position: 1144px 121px, 0px;
     background-repeat: no-repeat;
-    padding-top: 115px;
-    padding-bottom: 91px;
+    padding-top: 100px;
+    padding-bottom: 65px;
   }
 }
 .problems__container {
   @media screen and (min-width: $desktop) {
-    padding-left: 24px;
-    padding-right: 20px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
 }
 .problems__title {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
   font-weight: 800;
   font-size: 24px;
   line-height: 1.3;
@@ -38,76 +38,77 @@
 
   @media screen and (min-width: $tablet) {
     padding-left: 2px;
-    margin-bottom: 36px;
   }
   @media screen and (min-width: $desktop) {
-    margin-bottom: 63px;
+    margin-bottom: 70px;
     font-size: 46px;
   }
 }
 .problems-grid {
   counter-reset: section;
   background-color: $accent-text-color;
-  padding: 20px 13px 4px 30px;
+  padding: 19px 14px 19px 30px;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   @media screen and (min-width: $tablet) {
-    padding: 30px 64px 10px 96px;
+    padding: 26px 47px 30px 96px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
   @media screen and (min-width: $desktop) {
-    padding: 68px 113px 61px 115px;
+    padding: 70px 112px 62px 114px;
   }
 }
 .problems-grid__item {
   position: relative;
+  padding-top: 29px;
 
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
-    }
-  }
-
-  &:first-child {
-    margin-top: 21px;
-  }
-
-  &::before {
-    position: absolute;
-    top: -26px;
-    left: 28px;
-    counter-increment: section;
-    content: '0' counter(section);
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.2;
-    color: $accent-color;
-
-    @media screen and (min-width: $desktop) {
-      top: -31px;
+      margin-bottom: 15px;
     }
   }
 
   @media screen and (min-width: $tablet) {
-    width: calc((100% - 4 * 20px) / 2);
-  }
-  @media screen and (min-width: $desktop) {
-    width: calc(100% / 3 - 24px);
-    margin-left: 12px;
-    margin-top: 30px;
-  }
-}
-.problems-grid__item:not(:nth-last-child(-n + 2)) {
-  @media screen and (min-width: $tablet) and (max-width: 1365px) {
-    margin-bottom: 30px;
+    padding-top: 37px;
   }
 
+  @media screen and (min-width: $desktop) {
+    padding-top: 43px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    left: 28px;
+    counter-increment: section;
+    content: '0' counter(section);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $accent-color;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 1.65;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 2 * 22px) / 2);
+  }
+  &:not(:nth-last-child(-n + 2)) {
+    @media screen and (min-width: $tablet) and (max-width: 1365px) {
+      margin-bottom: 8px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 2 * 40px) / 3);
+  }
   &:not(:nth-last-child(-n + 3)) {
     @media screen and (min-width: $desktop) {
-      margin-bottom: 30px;
-      margin-top: 30px;
+      margin-bottom: 32px;
     }
   }
 }
@@ -116,19 +117,11 @@
     width: 209px;
   }
 }
-.problems-grid__item:nth-child(2) {
-  margin-top: 21px;
-}
-// .problems-grid__item:nth-child(3) {
-//   @media screen and (min-width: $desktop) {
-//     margin-top: 21px;
-//   }
-// }
 .problems-grid__text {
   position: relative;
   font-weight: 700;
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.43;
 
   @media screen and (min-width: $desktop) {
     font-size: 20px;
@@ -142,9 +135,13 @@
   width: 20px;
   height: 2px;
   background-color: $accent-color;
-  top: -15px;
+  top: -19px;
+
+  @media screen and (min-width: $tablet) {
+    top: -27px;
+  }
 
   @media screen and (min-width: $desktop) {
-    top: -21px;
+    top: -25px;
   }
 }
