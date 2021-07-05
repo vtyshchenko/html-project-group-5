@@ -53,7 +53,7 @@
       width: calc((100% - 2 * 10px) / 2);
     }
     @media screen and (min-width: $desktop) {
-      width: calc((100% - 2 * 30px) / 3);
+      width: calc((100% - 2 * 40px) / 3);
     }
   }
   &__item:not(:last-child) {
@@ -68,7 +68,7 @@
   }
   &__item:not(:nth-last-child(-n + 3)) {
     @media screen and (min-width: $desktop) {
-      margin-bottom: 64px;
+      margin-bottom: 52px;
     }
   }
 
