@@ -1,4 +1,5 @@
 .benefits {
+  position: absolute;
   &__container {
     @media screen and (min-width: $desktop) {
       padding: 0 26px;
