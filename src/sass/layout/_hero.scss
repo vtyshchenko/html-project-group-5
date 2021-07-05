@@ -31,17 +31,17 @@
 
 .hero__title-wrapper {
   max-width: 280px;
-  height: 80px;
+  height: 53px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
 }
 .description {
   max-width: 280px;
   display: block;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 30px;
+  margin-bottom: 52px;
 }
 .description__decor-one {
   font-weight: 500;
@@ -92,10 +92,14 @@
 
   .hero__title-wrapper {
     max-width: 332px;
-    height: 132px;
+    height: 69px;
   }
+  .description {
+    width: 332px;
+  }
+
   .hero-image {
-    margin-top: 48px;
+    margin-top: -11px;
     margin-bottom: 98px;
     margin-left: auto;
     margin-right: auto;
@@ -104,14 +108,14 @@
 
 @media screen and (min-width: 1366px) {
   .hero {
-    padding-top: 22px;
+    padding-top: 25px;
     padding-bottom: 119px;
     background-color: #e5e5e5e5;
     background-image: url(../images/hero/hero-shadow-line-desctop.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position-x: 101%;
-    background-position-y: 110%;
+    background-position-y: -90%;
     margin: 0 auto;
   }
 
@@ -158,6 +162,6 @@
   }
 
   .hero__oll-wrapper {
-    margin-right: 108px;
+    margin-right: 117px;
   }
 }
