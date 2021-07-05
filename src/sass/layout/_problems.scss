@@ -10,8 +10,8 @@
 
   @media screen and (min-width: $desktop) {
     background: url(../images/campfire.svg),
-      linear-gradient(to bottom, $main-text-color 68%, $accent-text-color 32%);
-    background-position: 1144px 82px, 0px;
+      linear-gradient(to bottom, $main-text-color 73%, $accent-text-color 32%);
+    background-position: 1144px 121px, 0px;
     background-repeat: no-repeat;
     padding-top: 100px;
     padding-bottom: 65px;
@@ -70,6 +70,14 @@
     }
   }
 
+  @media screen and (min-width: $tablet) {
+    padding-top: 37px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 43px;
+  }
+
   &::before {
     position: absolute;
     top: 3px;
@@ -77,9 +85,14 @@
     counter-increment: section;
     content: '0' counter(section);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.2;
     color: $accent-color;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 1.65;
+    }
   }
 
   @media screen and (min-width: $tablet) {
@@ -91,7 +104,7 @@
     }
   }
   @media screen and (min-width: $desktop) {
-    width: calc(100% / 3 - 80px);
+    width: calc((100% - 2 * 40px) / 3);
   }
   &:not(:nth-last-child(-n + 3)) {
     @media screen and (min-width: $desktop) {
@@ -108,7 +121,7 @@
   position: relative;
   font-weight: 700;
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.43;
 
   @media screen and (min-width: $desktop) {
     font-size: 20px;
@@ -122,5 +135,13 @@
   width: 20px;
   height: 2px;
   background-color: $accent-color;
-  top: -15px;
+  top: -19px;
+
+  @media screen and (min-width: $tablet) {
+    top: -27px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: -25px;
+  }
 }
