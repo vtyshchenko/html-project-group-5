@@ -10,17 +10,14 @@
     background-color: $main-background-color;
     text-align: center;
 
-    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    @media screen and (min-width: $tablet) {
       display: flex;
       justify-content: space-between;
       padding: 40px;
       text-align: left;
     }
     @media screen and (min-width: $desktop) {
-      display: flex;
-      justify-content: space-between;
       padding: 0 570px 0 183px;
-      text-align: left;
     }
   }
   .logo__link {
@@ -36,13 +33,11 @@
     }
   }
   &__contacts {
-    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    @media screen and (min-width: $tablet) {
       display: flex;
       justify-content: space-between;
     }
     @media screen and (min-width: $desktop) {
-      display: flex;
-      justify-content: space-between;
       padding: 126px 0 35px 0;
     }
   }
