@@ -78,12 +78,13 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position-x: 50%;
-    background-position-y: 110%;
+    background-position-y: 72%;
     margin: 0 auto;
   }
 
   .hero__main-wrapper {
     display: flex;
+    justify-content: space-between;
   }
 
   .hero__title {
@@ -100,18 +101,18 @@
 
   .hero-image {
     margin-top: -11px;
-    margin-bottom: 98px;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
 @media screen and (min-width: $desktop) {
-  .hero {
+  .hero__main-wrapper {
     padding-top: 25px;
     padding-bottom: 119px;
     background-color: #e5e5e5e5;
-    background-image: url(../images/hero/hero-shadow-line-desctop.png);
+    background-image: url(../images/hero/hero-shadow-line-desktop.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position-x: 101%;
@@ -121,7 +122,6 @@
 
   .hero-image {
     margin-top: -33px;
-    margin-bottom: 98px;
     margin-left: auto;
     margin-right: auto;
     width: 842px;
@@ -159,9 +159,5 @@
   .description__decor-three {
     font-size: 20px;
     line-height: 1.65;
-  }
-
-  .hero__oll-wrapper {
-    margin-right: 117px;
   }
 }
