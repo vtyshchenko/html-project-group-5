@@ -71,15 +71,8 @@
 
 @media screen and(min-width: $tablet) {
   .hero {
-    padding-top: 35px;
-    padding-bottom: 25px;
-    background-color: #e5e5e5e5;
     background-image: url(../images/hero/hero-shadow-line-tablet.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position-x: 50%;
     background-position-y: 72%;
-    margin: 0 auto;
   }
 
   .hero__main-wrapper {
@@ -114,15 +107,8 @@
 
 @media screen and (min-width: $desktop) {
   .hero {
-    padding-top: 25px;
-    padding-bottom: 30px;
-    background-color: #e5e5e5e5;
     background-image: url(../images/hero/hero-shadow-line-desktop.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position-x: 50%;
     background-position-y: bottom;
-    margin: 0 auto;
   }
   .hero-image {
     margin-top: -50px;
