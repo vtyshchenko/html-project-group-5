@@ -1,0 +1,122 @@
+.advantages {
+  padding-top: 30px;
+  padding-bottom: 44px;
+}
+
+.advantages__list {
+  width: 218px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.advantages__item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.64;
+  align-items: center;
+  letter-spacing: 0.08em;
+  color: $main-text-color;
+}
+
+.advantages__paragraph-adapted {
+  width: 218px;
+  margin-bottom: 23px;
+  display: flex;
+  align-items: center;
+}
+.advantages__paragraph-modern {
+  width: 195px;
+  margin-bottom: 23px;
+  display: flex;
+  align-items: center;
+}
+
+.advantages__paragraph-financial {
+  width: 163px;
+  display: flex;
+  align-items: center;
+}
+
+.advantages__paragraph-adapted::before {
+  content: '';
+  width: 103px;
+  height: 60px;
+  background-image: url(../images/advantages/adapted-author.svg);
+  background-size: contain;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}
+
+.advantages__paragraph-modern::before {
+  content: '';
+  width: 74px;
+  height: 60px;
+  background-image: url(../images/advantages/modern-teaching.svg);
+  background-size: contain;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+}
+
+.advantages__paragraph-financial::before {
+  content: '';
+  width: 172px;
+  height: 60px;
+  background-image: url(../images/advantages/financial-guarantee.svg);
+  background-size: contain;
+  margin-right: 17px;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    width: 100%;
+    display: flex;
+  }
+  .advantages__item {
+    align-items: center;
+  }
+  .advantages__paragraph-adapted {
+    margin-bottom: unset;
+    margin-right: 21px;
+  }
+  .advantages__paragraph-modern {
+    margin-bottom: unset;
+    margin-right: 21px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .advantages__wrapper {
+    max-width: 1344px;
+  }
+  .advantages__paragraph-adapted::before {
+    width: 117px;
+    height: 102px;
+    margin-right: -25px;
+  }
+
+  .advantages__paragraph-modern::before {
+    width: 100px;
+    height: 102px;
+    margin-right: -14px;
+  }
+
+  .advantages__paragraph-financial::before {
+    width: 104px;
+    height: 102px;
+    margin-right: -14px;
+  }
+
+  .advantages__paragraph-adapted {
+    width: 333px;
+    margin-right: unset;
+  }
+  .advantages__paragraph-modern {
+    width: 322px;
+    margin-right: unset;
+  }
+
+  .advantages__paragraph-financial {
+    width: 336px;
+    margin-right: unset;
+  }
+}
