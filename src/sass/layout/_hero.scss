@@ -69,7 +69,7 @@
   color: $accent-color;
 }
 
-@media screen and(min-width:768px) {
+@media screen and(min-width: $tablet) {
   .hero {
     padding-top: 35px;
     padding-bottom: 25px;
@@ -106,7 +106,7 @@
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: $desktop) {
   .hero {
     padding-top: 25px;
     padding-bottom: 119px;
