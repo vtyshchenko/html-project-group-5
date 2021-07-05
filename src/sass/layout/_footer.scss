@@ -1,9 +1,6 @@
 .footer {
   padding: 0;
   width: auto;
-  @media screen and (min-width: $desktop) {
-    padding-bottom: 56px;
-  }
 
   &__content {
     padding: 30px 60px;
@@ -17,18 +14,18 @@
       text-align: left;
     }
     @media screen and (min-width: $desktop) {
-      padding: 0 570px 0 183px;
+      padding: 0 592px 0 183px;
     }
   }
   .logo__link {
     padding: 0;
     margin-bottom: 20px;
 
-    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    @media screen and (min-width: $tablet) {
       margin: 0 203px 0 0;
     }
     @media screen and (min-width: $desktop) {
-      padding: 103px 0 53px 0;
+      padding: 52px 0 53px 0;
       margin: 0;
     }
   }
@@ -38,7 +35,7 @@
       justify-content: space-between;
     }
     @media screen and (min-width: $desktop) {
-      padding: 126px 0 35px 0;
+      padding: 56px 0 57px 0;
     }
   }
 
@@ -54,7 +51,7 @@
     width: 100%;
     margin-bottom: 30px;
 
-    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    @media screen and (min-width: $tablet) {
       font-size: 20px;
       line-height: 1.22;
       padding-right: 24px;
@@ -86,7 +83,7 @@
     padding: 22px 0 21px 0;
     color: $secondary-text-color;
 
-    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    @media screen and (min-width: $tablet) {
       padding: 22px 0 21px 40px;
       text-align: left;
     }
@@ -103,7 +100,7 @@
   fill: $accent-color;
   margin-right: 10px;
 
-  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+  @media screen and (min-width: $tablet) {
     width: 24px;
     height: 24px;
   }
