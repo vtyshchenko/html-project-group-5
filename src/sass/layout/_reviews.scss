@@ -19,7 +19,7 @@
     @media screen and (min-width: $tablet) {
       font-size: 26px;
       line-height: 130%;
-
+      margin-bottom: 30px;
       width: 100%;
     }
     @media screen and (min-width: $desktop) {
@@ -27,6 +27,7 @@
       line-height: 130%;
 
       width: 866px;
+      margin-bottom: 50px;
     }
   }
 
@@ -43,9 +44,13 @@
     margin-bottom: 20px;
 
     @media screen and (min-width: $tablet) {
+      padding: 40px;
       flex-direction: row;
 
       align-items: flex-start;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 50px 100px;
     }
   }
 
@@ -86,6 +91,7 @@
 
     @media screen and (min-width: $tablet) {
       text-align: left;
+      padding: 0;
     }
   }
 
@@ -112,10 +118,14 @@
 
   &__description {
     padding-bottom: 30px;
+
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 0;
+    }
   }
 
   &__graduated {
-    width: 240px;
+    min-width: 240px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -127,14 +137,15 @@
     color: #b9b9b9;
     margin: 0 auto 25px auto;
 
-    @media screen and (min-width: $tablet) {
-      font-size: 14px;
-      text-align: left;
-      line-height: 17 / 14 * 100%;
-      width: 468px;
-      margin: 0 0 25px 0;
+    @media screen and (min-width: $mobile) {
+      width: 440px;
+    }
 
-      width: 100%;
+    @media screen and (min-width: $tablet) {
+      text-align: left;
+      line-height: 15 / 12 * 100%;
+      width: 412px;
+      margin: 0 0 25px 0;
     }
 
     @media screen and (min-width: $desktop) {
@@ -142,12 +153,12 @@
       text-align: left;
       line-height: 17 / 14 * 100%;
       width: 468px;
-      margin: 0 0 25px 0;
+      margin: 0 0 20px 0;
     }
   }
 
   &__biography {
-    width: 240px;
+    min-width: 240px;
     font-weight: 500;
     font-size: 12px;
     line-height: 20 / 12 * 100%;
@@ -156,11 +167,14 @@
     color: #3d3d3d;
     margin: 0 auto 40px auto;
 
+    @media screen and (min-width: $mobile) {
+      width: 440px;
+    }
+
     @media screen and (min-width: $tablet) {
       text-align: left;
       width: 412px;
-
-      margin: 0 0 40px 0;
+      margin: 0;
     }
 
     @media screen and (min-width: $desktop) {
