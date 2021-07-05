@@ -97,6 +97,11 @@
   }
   .description {
     width: 332px;
+    margin-left: unset;
+  }
+
+  .button__lesson {
+    margin: unset;
   }
 
   .hero-image {
@@ -108,34 +113,33 @@
 }
 
 @media screen and (min-width: $desktop) {
-  .hero__main-wrapper {
+  .hero {
     padding-top: 25px;
-    padding-bottom: 119px;
+    padding-bottom: 30px;
     background-color: #e5e5e5e5;
     background-image: url(../images/hero/hero-shadow-line-desktop.png);
     background-repeat: no-repeat;
     background-size: auto;
-    background-position-x: 101%;
-    background-position-y: -90%;
+    background-position-x: 50%;
+    background-position-y: bottom;
     margin: 0 auto;
   }
-
   .hero-image {
-    margin-top: -33px;
+    margin-top: -50px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: -130px;
     width: 842px;
     height: 718px;
   }
 
   .hero__title {
-    font-size: 58px;
+    font-size: 55px;
   }
 
   .hero__title-wrapper {
     max-width: 660px;
-    height: 305px;
-    margin-bottom: 24px;
+    height: 228px;
+    margin-bottom: 8px;
   }
 
   .description {
