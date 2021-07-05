@@ -1,0 +1,65 @@
+.hero {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.hero__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+}
+
+.hero__image {
+  margin-top: -157px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+}
+
+.hero__image-shadow {
+  margin-top: 30px;
+  margin-left: 33px;
+  margin-right: auto;
+}
+
+.hero__title-wrapper {
+  max-width: 280px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.description {
+  max-width: 280px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+.description__decor-one {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.08em;
+  color: $secondary-text-color;
+  align-items: center;
+}
+.description__decor-two {
+  width: 245px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.57;
+  align-items: center;
+  letter-spacing: 0.08em;
+  color: $main-text-color;
+}
+.description__decor-three {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.57;
+  align-items: center;
+  letter-spacing: 0.08em;
+  color: $accent-color;
+}

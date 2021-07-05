@@ -1,1 +1,70 @@
-<section class="header"></section>
+<!-- header -->
+<header class="header">
+    <div class="container header__container">
+        <!-- navigation -->
+        <nav class="header__nav">
+            <!-- logo -->
+            <include src="./partials/logo.html"></include>
+            <!-- <a class="logo logo__link link" href="#">
+                <p class="logo__text-first-line">
+                    <span>Hell</span>
+                        <picture>
+                            <source srcset="./images/header/mobile-logo-fire.webp 1x, ./images/header/mobile-logo-fire@2x.webp 2x"
+                                media="(min-width: 1200px)" type="image/webp">
+                            <source srcset="./images/header/mobile-logo-fire.jpg 1x, ./images/header/mobile-logo-fire@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/header/mobile-logo-fire.webp 1x, ./images/header/mobile-logo-fire@2x.webp 2x"
+                                media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./images/header/mobile-logo-fire@2x.jpg 1x, ./images/header/mobile-logo-fire@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./images/header/mobile-logo-fire@2x.webp 1x, ./images/mobile/team/mobile_team@2x_(1).webp 2x"
+                                media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./images/mobile/team/mobile_team_(1).jpg 1x, ./images/mobile/team/mobile_team@2x_(1).jpg 2x"
+                                media="(max-width: 767px)">
+                            <img src="#" alt="Член команды Игорь Демьяненко">
+                        </picture>
+                    <img class="logo__img" src="./images/header/mobile-logo-fire@2x.jpg" alt="small fire logo">
+                    <span>EN</span>
+                </p>
+                <p class="logo__text-second-line">
+                    <span class="logo__text-second-line--color">hellish</span>
+                    english
+                </p>
+            </a> -->
+            <!-- navigation list -->
+            <ul class="nav-menu list">
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link link" href="#">Studying program</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link link" href="#">about</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link link" href="#">training options</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="nav-menu__link link" href="#">contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- button for consultation -->
+        <button class="button header__button" type="button">consultation by phone</button>
+        <!-- button for open mobile menu window -->
+        <button class="header__mobile-burger-button" type="button" data-menu-button>
+            <svg class="header__mobile-burger-icon" width="30" height="30">
+                <use href="./images/icons.svg#mobile-burger-icon"></use>
+            </svg>
+        </button>
+    </div>
+    <!-- mobile menu window -->
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+            <!-- button for close mobile menu window -->
+            <button class="mobile-menu__close-buton" type="button">
+                <svg class="mobile-menu_close-icon" width="30" height="30">
+                    <use href="./images/icons.svg#close-icon"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
