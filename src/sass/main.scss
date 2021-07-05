@@ -1,5 +1,6 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import '../lib/slick/slick.scss';
 
 @import './common/common';
 @import './common/base';
@@ -24,4 +25,3 @@
 @import './layout/reviews';
 @import './layout/contacts';
 @import './layout/footer';
-
