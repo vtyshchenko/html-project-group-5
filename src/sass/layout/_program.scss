@@ -1,4 +1,5 @@
 .program {
+  position: relative;
   padding-top: 50px;
   padding-bottom: 537px;
   background-color: $secondary-background-color;
@@ -14,19 +15,49 @@
   }
 }
 .program-list-first {
-  padding-left: 100px;
+  padding-left: 75px;
   padding-right: 4px;
+  position: relative;
+  &:last-child::after {
+    position: absolute;
+    content: '';
+    right: -84px;
+    bottom: -33px;
+    width: 176px;
+    height: 137px;
+    background-image: url(../images/program/our-program-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   &__item {
-    margin-bottom: 40px;
+    padding-bottom: 50px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 2;
+    line-height: 0.7;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: $accent-text-color;
+    position: relative;
+    padding-left: 25px;
+  }
+  &__item:not(:last-child) {
+    border-left: 1px solid $accent-text-color;
+  }
+
+  &__item:before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    top: 0px;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    background-color: $accent-color;
+    border-radius: 50%;
   }
   &__title {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
   }
 }
 .program-list-second {
@@ -38,20 +69,27 @@
     text-transform: none;
     color: $accent-color;
   }
+
   &__title {
+    position: relative;
     margin-bottom: 5px;
+    padding-left: 18px;
+    &--hidden {
+      color: transparent;
+    }
   }
 }
-.program-list-second__item::before {
+.program-list-second__title::before {
   content: '';
   position: absolute;
-  left: 101px;
+  left: 0px;
+  top: 9px;
   width: 12px;
   height: 2px;
   background-color: $accent-color;
 }
 .program-list-third {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   &__item {
     font-weight: 500;
     font-size: 12px;
