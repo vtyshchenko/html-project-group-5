@@ -1,0 +1,123 @@
+.guarantee {
+  padding-top: 25px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 65px;
+  }
+}
+
+.guarantee__wrapper {
+  padding: 0 20px 0px 25px;
+  margin: 0 auto;
+  max-width: 320px;
+  background-color: $garantee-background-color;
+
+  @media screen and (min-width: $mobile) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1366px;
+  }
+}
+
+.guarantee__title {
+  margin-bottom: 30px;
+  text-align: center;
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.307;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+
+    font-size: 46px;
+    line-height: 1.304;
+  }
+}
+
+.guarantee__list {
+  padding: 50px 0 51px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 30px 50px 30px 72px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 50px 112px 50px 104px;
+  }
+}
+
+.guarantee__text {
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.666;
+
+  color: #3d3d3d;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.guarantee__text-color {
+  color: $accent-color;
+}
+
+.guarantee__item {
+  position: relative;
+  padding-left: 28px;
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 32px;
+  }
+}
+
+.guarantee__item:not(:last-child) {
+  border-left: 1px dashed $secondary-text-color;
+  padding-bottom: 23px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 42px;
+  }
+}
+
+.guarantee__item::before {
+  content: '';
+
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: -8px;
+  justify-content: center;
+  background-image: url(../images/fire.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: $desktop) {
+    width: 22px;
+    height: 30px;
+    left: -12px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .guarantee__container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
