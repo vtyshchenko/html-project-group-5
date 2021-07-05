@@ -5,9 +5,12 @@
 @import './common/base';
 @import './common/container';
 @import './common/section';
+@import './utils/mixins';
 @import './utils/placeholders';
 
 @import './components/button';
+@import './components/logo';
+@import './components/social-icons-list';
 
 @import './layout/header';
 @import './layout/hero';
@@ -21,3 +24,4 @@
 @import './layout/reviews';
 @import './layout/contacts';
 @import './layout/footer';
+
