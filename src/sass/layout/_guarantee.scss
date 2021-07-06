@@ -6,26 +6,16 @@
   }
 }
 
-.guarantee__wrapper {
-  padding: 0 20px 0px 25px;
-  margin: 0 auto;
-  max-width: 320px;
+.guarantee .container {
   background-color: $garantee-background-color;
 
-  @media screen and (min-width: $mobile) {
-    max-width: 480px;
-  }
-
   @media screen and (min-width: $tablet) {
-    max-width: 768px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    max-width: 1366px;
+    background-color: $main-background-color;
   }
 }
 
 .guarantee__title {
+  display: block;
   margin-bottom: 30px;
   text-align: center;
 
@@ -34,6 +24,7 @@
   font-size: 26px;
   line-height: 1.307;
   letter-spacing: 0.03em;
+  background-color: $main-background-color;
 
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
@@ -45,12 +36,13 @@
 
 .guarantee__list {
   padding: 50px 0 51px;
+  background-color: $garantee-background-color;
 
   @media screen and (min-width: $tablet) {
-    padding: 30px 50px 30px 72px;
+    padding: 30px 19px 30px 80px;
   }
   @media screen and (min-width: $desktop) {
-    padding: 50px 112px 50px 104px;
+    padding: 50px 72px 45px 112px;
   }
 }
 
@@ -60,6 +52,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.666;
+  letter-spacing: 0.03em;
 
   color: #3d3d3d;
 
@@ -75,10 +68,14 @@
 
 .guarantee__item {
   position: relative;
-  padding-left: 28px;
+  padding-left: 20px;
 
   @media screen and (min-width: $tablet) {
     padding-left: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 42px;
   }
 }
 
@@ -88,10 +85,6 @@
 
   @media screen and (min-width: $tablet) {
     padding-bottom: 20px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    padding-left: 42px;
   }
 }
 

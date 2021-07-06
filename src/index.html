@@ -24,8 +24,10 @@
     <include src="./partials/advantages.html"></include>
     <include src="./partials/problems.html"></include>
     <include src="./partials/how-we-do.html"></include>
-    <include src="./partials/program.html"></include>
-    <include src="./partials/benefits.html"></include>
+    <div class="program-benefits">
+      <include src="./partials/program.html"></include>
+      <include src="./partials/benefits.html"></include>
+    </div>
     <include src="./partials/about.html"></include>
     <include src="./partials/guarantee.html"></include>
     <include src="./partials/reviews.html"></include>
@@ -33,84 +35,14 @@
     <include src="./partials/footer.html"></include>
 
     <include src="./partials/modal_form.html"></include>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <!-- <include src="./partials/example.html"></include> -->
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/menu-mobile.js"></script>
-    <!-- <script src="./js/slider.js"></script> -->
-    <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
 
-      function showMore() {
-        //removes the link
-        document.getElementById('link').parentElement.removeChild('link');
-        //shows the #more
-        document.getElementById('more').style.display = 'block';
-      }
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName('mySlides');
-        var dots = document.getElementsByClassName('demo');
-        var miniat = document.getElementsByClassName('column');
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < dots.length; i++) {
-          some_text = { index: index };
-          console.log(some_text);
-          dots[i].className = dots[i].className.replace(' active', '');
-          var index = dots[i].className.indexOf(' visually-hidden');
-          if (index < 0) {
-            dots[i].className += ' visually-hidden';
-            dots[i].style.width = '54px';
-          }
-        }
-
-        d = slideIndex - 1;
-        if (d < 1) {
-          d = 1;
-        } else {
-          if (d > dots.length - 2) {
-            d = dots.length - 2;
-          }
-        }
-
-        for (i = -1; i < 2; i++) {
-          dots[d - i].className = dots[d - 1].className.replace(' visually-hidden', '');
-        }
-
-        for (i = 0; i < slides.length; i++) {
-          slides[i].className = slides[i].className.replace(' visually-hidden', '');
-
-          if (i != n - 1) {
-            slides[i].className += ' visually-hidden';
-          }
-        }
-
-        slides[slideIndex - 1].className = slides[slideIndex - 1].className.replace(
-          ' visually-hidden',
-          '',
-        );
-        dots[slideIndex - 1].className += ' active';
-        dots[slideIndex - 1].style.width = '64px';
-      }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
 
     <script>
       function showMore(id) {
@@ -139,6 +71,37 @@
           }
         }
       }
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('.slider')
+          .not('.slick-initialized')
+          .slick({
+            arrows: false,
+            dots: false,
+            speed: 500,
+            easing: 'linear',
+            SlidesToShow: 1,
+            fade: true,
+            responsive: [
+              {
+                breakpoint: 767,
+                settings: {
+                  dots: true,
+                  arrows: true,
+                },
+              },
+            ],
+            mobileFirst: true,
+            asNavFor: '.slider-mini',
+          });
+        $('.slider-mini').not('.slick-initialized').slick({
+          slidesToShow: 3,
+          arrows: false,
+          asNavFor: '.slider',
+          arrows: true,
+        });
+      });
     </script>
   </body>
 </html>

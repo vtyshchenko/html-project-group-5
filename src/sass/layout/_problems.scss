@@ -65,7 +65,7 @@
   padding-top: 29px;
 
   &:not(:last-child) {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $tablet - 1px) {
       margin-bottom: 15px;
     }
   }
@@ -99,7 +99,7 @@
     width: calc((100% - 2 * 22px) / 2);
   }
   &:not(:nth-last-child(-n + 2)) {
-    @media screen and (min-width: $tablet) and (max-width: 1365px) {
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
       margin-bottom: 8px;
     }
   }
@@ -113,7 +113,7 @@
   }
 }
 .problems-grid__item:nth-child(5) {
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: $mobile) {
     width: 209px;
   }
 }

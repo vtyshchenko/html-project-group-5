@@ -1,0 +1,202 @@
+.about {
+  padding-top: 270px;
+  padding-bottom: 25px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 302px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 329px;
+    padding-bottom: 65px;
+  }
+}
+
+.about__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
+}
+
+.about__wrapper {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.about__photo-set {
+  margin-bottom: 20px;
+  transition: transform $anim-duration $anim-timing-function;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 43px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 30px;
+  }
+}
+
+.about__info {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    width: 401px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 641px;
+  }
+}
+
+.about__subtitle {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 1.23;
+    margin-bottom: 15px;
+  }
+}
+
+.about__list {
+  border-top: 1px solid $secondary-text-color;
+  padding-top: 20px;
+  margin-bottom: 57px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 30px;
+    margin-bottom: 70px;
+  }
+}
+
+.about__item {
+  display: flex;
+  align-items: baseline;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 27px;
+    }
+  }
+}
+
+.about__item::before {
+  display: inline-block;
+  content: '';
+  background-image: url('../images/check-mark.svg');
+  min-width: 17.08px;
+  max-width: 17.08px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 9px;
+
+  @media screen and (min-width: $desktop) {
+    min-width: 24px;
+    max-width: 24px;
+    height: 20px;
+    margin-right: 34px;
+  }
+}
+
+.about__paragraph {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.06em;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+  }
+}
+
+.about__education {
+  position: relative;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 33px;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: -20px;
+    left: 0;
+    width: 17px;
+    height: 2px;
+    background-color: $accent-color;
+
+    @media screen and (min-width: $desktop) {
+      width: 24px;
+    }
+  }
+}
+
+.about__education-item {
+  font-size: 12px;
+  color: $secondary-text-color;
+  letter-spacing: normal;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 10px;
+    line-height: 2;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.56;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.about__certificate {
+  font-size: 12px;
+  color: $accent-color;
+  letter-spacing: normal;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
+
+.about__certificate:visited {
+  color: $accent-color;
+}
+
+.about__photo-set:hover,
+.about__photo-set:focus {
+  transform: scale(1.1);
+}

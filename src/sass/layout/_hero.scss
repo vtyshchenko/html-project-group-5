@@ -1,7 +1,6 @@
 .hero {
   padding-top: 25px;
   padding-bottom: 30px;
-  background-color: #e5e5e5e5;
   background-image: url(../images/hero/hero-shadow-line-mobile.png);
   background-repeat: no-repeat;
   background-size: auto;
@@ -15,8 +14,8 @@
 }
 
 .hero-image {
-  margin-top: 30px;
-  margin-bottom: 48px;
+  margin-top: 55px;
+  margin-bottom: 47px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -69,15 +68,16 @@
   color: $accent-color;
 }
 
-@media screen and(min-width: $tablet) {
+@media screen and (min-width: $tablet) {
   .hero {
     background-image: url(../images/hero/hero-shadow-line-tablet.png);
-    background-position-y: 72%;
+    background-position-y: 84%;
+    padding-top: 88px;
+    padding-bottom: 110px;
   }
 
   .hero__main-wrapper {
     display: flex;
-    justify-content: space-between;
   }
 
   .hero__title {
@@ -93,7 +93,7 @@
     margin-left: unset;
   }
 
-  .button__lesson {
+  .button__hero {
     margin: unset;
   }
 
@@ -105,10 +105,19 @@
   }
 }
 
+@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+  .hero__main-wrapper {
+    justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: $desktop) {
   .hero {
     background-image: url(../images/hero/hero-shadow-line-desktop.png);
     background-position-y: bottom;
+    padding-top: 100px;
+    padding-bottom: 107px;
+    overflow: hidden;
   }
   .hero-image {
     margin-top: -50px;
@@ -120,6 +129,7 @@
 
   .hero__title {
     font-size: 55px;
+    width: 642px;
   }
 
   .hero__title-wrapper {
@@ -131,8 +141,7 @@
   .description {
     width: 493px;
     display: block;
-    margin-left: 1%;
-    margin-bottom: 109px;
+    margin-bottom: 52px;
   }
 
   .description__decor-one {
@@ -149,5 +158,11 @@
   .description__decor-three {
     font-size: 20px;
     line-height: 1.65;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .description__decor-three {
+    color: inherit;
   }
 }
