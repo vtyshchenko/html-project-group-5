@@ -30,6 +30,7 @@
 
   &__button {
     @extend %buttons;
+    margin-right: 40px;
   }
 }
 
@@ -90,6 +91,14 @@
       color: $secondary-text-color;
       padding-top: 15px;
       padding-bottom: 15px;
+
+      transition: color $anim-duration $anim-timing-function;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $accent-color;
+      }
     }
 
     &__item {
