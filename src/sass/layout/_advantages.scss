@@ -66,10 +66,16 @@
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
+  .advantages {
+    padding-top: 0;
+    padding-bottom: 45px;
+  }
+
   .advantages__list {
     width: 100%;
     display: flex;
+    justify-content: space-between;
   }
   .advantages__item {
     align-items: center;
@@ -84,7 +90,12 @@
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: $desktop) {
+  .advantages {
+    padding-bottom: 130px;
+    padding-top: unset;
+  }
+
   .advantages__wrapper {
     max-width: 1344px;
   }
