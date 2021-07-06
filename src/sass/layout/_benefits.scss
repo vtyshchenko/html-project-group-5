@@ -1,5 +1,17 @@
 .benefits {
   position: absolute;
+  bottom: -239px;
+  @media screen and (min-width: 480px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-242px, 450px);
+  }
+  @media screen and (min-width: $tablet) {
+    transform: translate(-384px, 444px);
+  }
+  @media screen and (min-width: $desktop) {
+    transform: translate(-683px, 398px);
+  }
   &__container {
     @media screen and (min-width: $desktop) {
       padding: 0 26px;
@@ -84,7 +96,6 @@
     display: inline-block;
     counter-increment: section;
     content: '0' counter(section) ' ';
-    // width: 20px;
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 14px;

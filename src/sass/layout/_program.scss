@@ -1,9 +1,24 @@
 .program {
   position: relative;
   padding-top: 50px;
-  padding-bottom: 537px;
+  padding-bottom: 506px;
   background-color: $secondary-background-color;
-
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 369px;
+    padding-top: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 120px;
+  }
+  &-border {
+    @media screen and (min-width: $desktop) {
+      position: absolute;
+      top: 276px;
+      display: block;
+      width: 100vw;
+      border-top: 1px solid $color-white;
+    }
+  }
   &__title {
     margin-bottom: 43px;
     font-weight: 800;
@@ -16,6 +31,11 @@
     }
     @media screen and (min-width: $tablet) {
       margin-bottom: 52px;
+      font-size: 26px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 100px;
+      font-size: 46px;
     }
   }
 }
@@ -25,6 +45,10 @@
   position: relative;
   @media screen and (min-width: $tablet) {
     padding-left: 50px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    padding-left: 0;
   }
   &:last-child::after {
     position: absolute;
@@ -48,6 +72,8 @@
     }
     @media screen and (min-width: $tablet) {
       width: 384px;
+      right: -39px;
+      bottom: -109px;
       height: 280px;
       background-image: url(../images/program/our-program-tablet.png);
     }
@@ -60,6 +86,25 @@
       (min-resolution: 192dpi) and (min-width: $tablet),
       (min-resolution: 2dppx) and (min-width: $tablet) {
       background-image: url(../images/program/our-program-tablet@2x.png);
+    }
+    @media screen and (min-width: $desktop) {
+      right: 0;
+      // left: -25px;
+      left: -182px;
+      bottom: -275px;
+      width: 674px;
+      height: 502px;
+      background-image: url(../images/program/our-program-desktop.png);
+    }
+    @media (min-device-pixel-ratio: 1.5) and (min-width: $desktop),
+      (min-resolution: 144dpi) and (min-width: $desktop),
+      (min-resolution: 1.5dppx) and (min-width: $desktop) {
+      background-image: url(../images/program/our-program-desktop@1.5x.png);
+    }
+    @media (min-device-pixel-ratio: 2) and (min-width: $desktop),
+      (min-resolution: 192dpi) and (min-width: $desktop),
+      (min-resolution: 2dppx) and (min-width: $desktop) {
+      background-image: url(../images/program/our-program-desktop@2x.png);
     }
   }
   &__item {
@@ -76,9 +121,17 @@
       padding-left: 42px;
       padding-bottom: 30px;
     }
+    @media screen and (min-width: $desktop) {
+      padding-left: 0;
+      font-size: 20px;
+      line-height: 1.4;
+      padding-top: 60px;
+    }
   }
   &__item:not(:last-child) {
-    border-left: 1px solid $accent-text-color;
+    @media screen and (max-width: 1365px) {
+      border-left: 1px solid $accent-text-color;
+    }
   }
 
   &__item:before {
@@ -91,15 +144,30 @@
     height: 12px;
     background-color: $accent-color;
     border-radius: 50%;
+    @media screen and (min-width: $desktop) {
+      top: -12px;
+      left: 0px;
+      width: 17px;
+      height: 16px;
+    }
   }
   &__title {
     margin-bottom: 15px;
   }
 }
 .program-list-second {
+  &:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 25px;
+    }
+  }
+
   &:first-child {
     @media screen and (min-width: $tablet) {
       width: 176px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 240px;
     }
   }
   &__item {
@@ -109,6 +177,10 @@
     letter-spacing: 0.08em;
     text-transform: none;
     color: $accent-color;
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 1.65;
+    }
   }
 
   &:not(:last-child) {
@@ -121,6 +193,10 @@
     position: relative;
     margin-bottom: 5px;
     padding-left: 18px;
+    @media screen and (min-width: $desktop) {
+      padding-left: 32px;
+      margin-bottom: 10px;
+    }
     &--hidden {
       color: transparent;
     }
@@ -128,6 +204,9 @@
   &-wrapper {
     @media screen and (min-width: $tablet) {
       display: flex;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-direction: column;
     }
   }
 }
@@ -139,14 +218,25 @@
   width: 12px;
   height: 2px;
   background-color: $accent-color;
+  @media screen and (min-width: $desktop) {
+    width: 20px;
+    top: 15px;
+  }
 }
 .program-list-third {
   margin-bottom: 10px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
   &__item {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
     color: $secondary-text-color;
     opacity: 0.5;
+    @media screen and (min-width: $desktop) {
+      font-size: 18px;
+      line-height: 1.56;
+    }
   }
 }
