@@ -53,8 +53,11 @@
   }
 }
 
-.slider .slick-dots li:not(:last-child) {
+.slider .slick-dots li {
   list-style: none;
+}
+
+.slider .slick-dots li:not(:last-child) {
   margin-right: 30px;
 }
 
