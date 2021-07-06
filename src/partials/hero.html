@@ -1,19 +1,26 @@
 <section class="hero">
     <div class="container hero__main-wrapper">
-    <div class="hero__title-wrapper">
-        <h1 class="hero__title">Complex preparation for English UPE</h1>
-    </div>
-    <div class="description">
-        <p class="description__decor-one">It won’t be easy.</p>
-        <p class="description__decor-two">But you’re guaranteed to get
-            <span class="description__decor-three">+25 points</span>
-        </p>
-    </div>
-    <button class="button__lesson" type="button">I want a free lesson</button>
-    <div class="hero__image-wrapper">
-            <img class="hero__image-shadow" srcset="./images/hero/hero-shadow-mobile.png" alt="photo-people">
-            <img class="hero__image" src="./images/hero/hero-mobile.png" alt="photo-people">
-    </div>
+        <div>
+                <div class="hero__title-wrapper">
+                    <h1 class="hero__title">Complex preparation for English UPE</h1>
+                </div>
+                <div class="description">
+                    <p class="description__decor-one">It won’t be easy.</p>
+                    <p class="description__decor-two">But you’re guaranteed to get
+                        <span class="description__decor-three">+25 points</span>
+                    </p>
+                </div>
+                <button class="button__lesson button__hero" type="button">I want a free lesson</button>
+        </div>
 
+    <picture>
+        <source media="(min-width:1366px)" type="image/webp" srcset="./images/hero/hero-desktop.webp 1x, ./images/hero/hero-desktop@1.5x.webp 1.5x, ./images/hero/hero-desktop@2x.webp 2x">
+        <source media="(min-width:768px)" type="image/webp" srcset="./images/hero/hero-tablet.webp 1x, ./images/hero/hero-tablet@1.5x.webp 1.5x, ./images/hero/hero-tablet@2x.webp 2x">
+        <source media="(max-width:767px)" type="image/webp" srcset="./images/hero/hero-mob.webp 1x, ./images/hero/hero-mob@1.5x.webp 1.5x, ./images/hero/hero-mob@2x.webp 2x">
+        <source media="(min-width:1366px)" srcset="./images/hero/hero-desktop.png 1x, ./images/hero/hero-desktop@1.5x.png 1.5x, ./images/hero/hero-desktop@2x.png 2x">
+        <source media="(min-width:768px)" srcset="./images/hero/hero-tablet.png 1x, ./images/hero/hero-tablet@1.5x.png 1.5x, ./images/hero/hero-tablet@2x.png 2x">
+        <source media="(max-width:767px)" srcset="./images/hero/hero-mob.png 1x, ./images/hero/hero-mob@1.5x.png 1.5x, ./images/hero/hero-mob@2x.png 2x">
+        <img class="hero-image" src="#" alt="hero">
+    </picture>
     </div>
 </section>

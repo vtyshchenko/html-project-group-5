@@ -4,7 +4,7 @@
 
     font-weight: 800;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.1;
     letter-spacing: 0.04em;
     color: $main-text-color;
 
@@ -13,7 +13,9 @@
   }
 
   &__text-first-line {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
   }
 
   &__text-second-line {
@@ -29,10 +31,32 @@
   }
 
   &__img {
-    position: relative;
-    top: 3px;
-    display: inline-block;
+    margin: 0 3px;
     width: 14px;
     height: 20px;
+  }
+}
+
+// 768+
+@media screen and (min-width: $tablet) {
+  .logo {
+    &__link {
+      font-size: 26px;
+      line-height: 1.23;
+    }
+
+    &__text-second-line {
+      font-size: 8px;
+      line-height: 1.25;
+    }
+
+    &__img {
+      width: 22px;
+      height: 30px;
+    }
+
+    &__text-first-line {
+      margin-bottom: 5px;
+    }
   }
 }

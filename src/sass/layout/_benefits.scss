@@ -1,9 +1,20 @@
 .benefits {
+  position: absolute;
+  bottom: -239px;
+  @media screen and (min-width: 480px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-242px, 450px);
+  }
+  @media screen and (min-width: $tablet) {
+    transform: translate(-384px, 444px);
+  }
+  @media screen and (min-width: $desktop) {
+    transform: translate(-683px, 398px);
+  }
   &__container {
     @media screen and (min-width: $desktop) {
-      padding: 0 96px 0 202px;
-      // padding-left: 202px;
-      // padding-right: 96px;
+      padding: 0 26px;
     }
   }
   &__title {
@@ -37,14 +48,14 @@
   &__list {
     list-style: none;
     counter-reset: section;
-    padding: 20px 14px 4px 30px;
+    padding: 20px 14px 20px 30px;
     background: $accent-text-color;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding: 30px 118px 21px 98px;
+      padding: 35px 118px 40px 98px;
     }
     @media screen and (min-width: $desktop) {
       padding: 70px 84px 70px 82px;
@@ -55,22 +66,22 @@
       width: calc((100% - 2 * 10px) / 2);
     }
     @media screen and (min-width: $desktop) {
-      width: calc((100% - 2 * 30px) / 3);
+      width: calc((100% - 2 * 40px) / 3);
     }
   }
   &__item:not(:last-child) {
     @media screen and (max-width: 767px) {
-      margin-bottom: 15px;
+      margin-bottom: 36px;
     }
   }
   &__item:not(:nth-last-child(-n + 2)) {
     @media screen and (min-width: $tablet) and (max-width: 1365px) {
-      margin-bottom: 34px;
+      margin-bottom: 38px;
     }
   }
   &__item:not(:nth-last-child(-n + 3)) {
     @media screen and (min-width: $desktop) {
-      margin-bottom: 32px;
+      margin-bottom: 52px;
     }
   }
 
@@ -85,27 +96,29 @@
     display: inline-block;
     counter-increment: section;
     content: '0' counter(section) ' ';
-    // width: 20px;
     font-weight: bold;
-    padding-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 14px;
     line-height: 1.65;
     letter-spacing: 0.08em;
     color: $accent-color;
     @media screen and (min-width: $desktop) {
-      font-size: 16px;
+      font-size: 20px;
     }
   }
   &__text {
     font-weight: bold;
     font-size: 14px;
-    line-height: 2;
+    line-height: 1.43;
     letter-spacing: 0.08em;
     color: $main-text-color;
+    @media screen and (min-width: $tablet) {
+      line-height: 1.71;
+    }
     @media screen and (min-width: $desktop) {
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.2;
-      letter-spacing: 0.01em;
+      letter-spacing: 0.08em;
     }
   }
 }
