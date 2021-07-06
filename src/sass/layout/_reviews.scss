@@ -3,9 +3,8 @@
 
   &__title {
     display: block;
-    //   margin-bottom: 42px;
     text-align: center;
-    margin: 0 auto 42px auto;
+    margin: 0 auto 24px auto;
 
     width: 176px;
 
@@ -15,16 +14,14 @@
 
     letter-spacing: 0.03em;
 
-    color: #111518;
+    color: $main-text-color;
     @media screen and (min-width: $tablet) {
       font-size: 26px;
-      line-height: 130%;
       margin-bottom: 30px;
       width: 100%;
     }
     @media screen and (min-width: $desktop) {
       font-size: 46px;
-      line-height: 130%;
 
       width: 866px;
       margin-bottom: 50px;
@@ -41,16 +38,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 62px;
 
     @media screen and (min-width: $tablet) {
       padding: 40px;
       flex-direction: row;
 
       align-items: flex-start;
+      margin-bottom: 30px;
     }
     @media screen and (min-width: $desktop) {
       padding: 50px 100px;
+      margin-bottom: 40px;
     }
   }
 
@@ -58,10 +57,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 
     @media screen and (min-width: $tablet) {
-      margin-bottom: 0;
       margin-right: 46px;
     }
   }
@@ -107,21 +105,13 @@
     }
   }
 
-  &__description {
-    padding-bottom: 30px;
-
-    @media screen and (min-width: $tablet) {
-      padding-bottom: 0;
-    }
-  }
-
   &__graduated {
     min-width: 200px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 15 / 12 * 100%;
     text-align: center;
     letter-spacing: 0.08em;
 
@@ -135,8 +125,8 @@
     @media screen and (min-width: $tablet) {
       text-align: left;
       line-height: 15 / 12 * 100%;
-      //   width: 412px;
-      margin: 0 0 25px 0;
+      width: 412px;
+      margin: 0 0 20px 0;
     }
 
     @media screen and (min-width: $desktop) {
@@ -156,15 +146,15 @@
     letter-spacing: 0.01em;
     text-align: center;
     color: #3d3d3d;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 0 auto;
 
-    // @media screen and (min-width: $mobile) {
-    //   width: 440px;
-    // }
+    @media screen and (min-width: $mobile) {
+      display: block;
+      width: 400px;
+    }
 
     @media screen and (min-width: $tablet) {
       text-align: left;
-      //   width: 536px;
       margin: 0;
     }
 

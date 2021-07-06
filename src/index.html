@@ -45,14 +45,25 @@
     <script src="./js/script.js"></script>
     <script>
       $(document).ready(function () {
-        $('.slider').not('.slick-initialized').slick({
-          arrows: true,
-          dots: true,
-          speed: 500,
-          easing: 'linear',
-          SlidesToShow: 1,
-          fade: true,
-        });
+        $('.slider')
+          .not('.slick-initialized')
+          .slick({
+            arrows: true,
+            dots: false,
+            speed: 500,
+            easing: 'linear',
+            SlidesToShow: 1,
+            fade: true,
+            responsive: [
+              {
+                breakpoint: 767,
+                settings: {
+                  dots: true,
+                },
+              },
+            ],
+            mobileFirst: true,
+          });
       });
     </script>
   </body>
