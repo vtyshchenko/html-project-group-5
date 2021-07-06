@@ -42,13 +42,41 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
-    <script src="./js/script.js"></script>
+
+    <script>
+      function showMore(id) {
+        document.getElementById(id + 'Overflow').className = '';
+        document.getElementById(id + 'MoreLink').className = 'link-text-toggle hidden';
+        document.getElementById(id + 'dots').className = 'hidden';
+        document.getElementById(id + 'LessLink').className = 'link-text-toggle';
+      }
+
+      function showLess(id) {
+        document.getElementById(id + 'Overflow').className = 'hidden';
+        document.getElementById(id + 'MoreLink').className = 'link-text-toggle';
+        document.getElementById(id + 'LessLink').className = 'link-text-toggle hidden';
+      }
+
+      var len = 1000;
+      var shrinkables = document.getElementsByClassName('shrinkable');
+      if (shrinkables.length > 0) {
+        for (var i = 0; i < shrinkables.length; i++) {
+          var fullText = shrinkables[i].innerHTML;
+          if (fullText.length > len) {
+            var trunc = fullText.substring(0, len).replace(/\w+$/, '');
+            var remainder = '';
+            var id = shrinkables[i].id;
+            remainder = fullText.substring(len, fullText.length);
+          }
+        }
+      }
+    </script>
     <script>
       $(document).ready(function () {
         $('.slider')
           .not('.slick-initialized')
           .slick({
-            arrows: true,
+            arrows: false,
             dots: false,
             speed: 500,
             easing: 'linear',
@@ -59,11 +87,19 @@
                 breakpoint: 767,
                 settings: {
                   dots: true,
+                  arrows: true,
                 },
               },
             ],
             mobileFirst: true,
+            asNavFor: '.slider-mini',
           });
+        $('.slider-mini').not('.slick-initialized').slick({
+          slidesToShow: 3,
+          arrows: false,
+          asNavFor: '.slider',
+          arrows: true,
+        });
       });
     </script>
   </body>

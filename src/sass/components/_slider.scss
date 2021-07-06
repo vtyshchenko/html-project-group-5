@@ -8,6 +8,7 @@
   overflow: hidden;
 }
 
+.slider-mini .slick-arrow,
 .slider .slick-arrow {
   position: absolute;
   font-size: 0;
@@ -23,11 +24,13 @@
     top: 50%;
   }
 }
-
+.slider-mini .slick-arrow.slick-prev,
 .slider .slick-arrow.slick-prev {
   left: -13px;
   background: url('../images/reviews/arrow-prev.svg') 0 / 100% no-repeat;
 }
+
+.slider-mini .slick-arrow.slick-next,
 .slider .slick-arrow.slick-next {
   right: -13px;
   background: url('../images/reviews/arrow-next.svg') 0 / 100% no-repeat;
@@ -57,10 +60,12 @@
 
 .slider .slick-dots button {
   font-size: 0;
+  opacity: 0.6;
 
   &:hover,
   &:focus {
     cursor: pointer;
+    opacity: 1;
   }
 }
 
@@ -123,9 +128,34 @@
 .slider .slick-dots li.slick-active button {
   width: 64px;
   height: 64px;
+  opacity: 1;
 }
 
 /* slide */
 .slick-track {
   display: flex;
+  align-items: center;
+}
+
+.slider-mini {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 50px;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &.slick-current img {
+      width: 64px;
+      height: 64px;
+      opacity: 1;
+    }
+  }
 }
