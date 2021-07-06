@@ -7,6 +7,11 @@
     align-items: center;
   }
 
+  &__logo-link {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   &__mobile-burger-button {
     position: relative;
     width: 30px;
@@ -28,9 +33,10 @@
   }
 }
 
-.mobile-menu {
-  display: none;
-}
+// delеte after made the mobile-menu
+// .mobile-menu {
+//   display: none;
+// }
 
 // before 1365
 @media screen and (max-width: 1365px) {
@@ -51,20 +57,6 @@
 // 768+
 @media screen and (min-width: $tablet) {
   .header {
-    &__button {
-      background: transparent;
-      color: $accent-color;
-      margin-right: 40px;
-
-      &:focus,
-      &:hover,
-      &:active {
-        color: $accent-text-color;
-        background: $accent-color;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      }
-    }
-
     &__content-wrapper {
       display: flex;
       align-items: center;
