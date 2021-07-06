@@ -1,0 +1,225 @@
+/* slick */
+.slider {
+  position: relative;
+  padding: 0 15px;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slider-mini .slick-arrow,
+.slider .slick-arrow {
+  position: absolute;
+  font-size: 0;
+  z-index: 1000;
+  width: 30px;
+  height: 50px;
+  margin: -30px 0 0 0;
+  border: none;
+  cursor: pointer;
+  bottom: 0;
+
+  @media screen and (min-width: $tablet) {
+    top: 50%;
+  }
+}
+.slider-mini .slick-arrow.slick-prev,
+.slider .slick-arrow.slick-prev {
+  left: -13px;
+  background: url('../images/reviews/arrow-prev.svg') 0 / 100% no-repeat;
+}
+
+.slider-mini .slick-arrow.slick-next,
+.slider .slick-arrow.slick-next {
+  right: -13px;
+  background: url('../images/reviews/arrow-next.svg') 0 / 100% no-repeat;
+}
+
+.slider .slick-dots {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 285px;
+  }
+}
+
+.slider .slick-dots li:not(:last-child) {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  opacity: 0.6;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+.slider .slick-dots li:nth-child(1) button {
+  background: url('../images/reviews/volodymyr/volodymyr-min-icon.png') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+
+  @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url('../images/reviews/volodymyr/volodymyr-min-icon@1.5x.png') 0 / 100% no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: url('../images/reviews/volodymyr/volodymyr-min-icon@2x.png') 0 / 100% no-repeat;
+  }
+}
+
+.slider .slick-dots li:nth-child(2) button {
+  background: url('../images/reviews/emma/emma-min-icon.png') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+
+  @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url('../images/reviews/emma/emma-min-icon.png') 0 / 100% no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: url('../images/reviews/emma/emma-min-icon.png') 0 / 100% no-repeat;
+  }
+}
+
+.slider .slick-dots li:nth-child(3) button {
+  background: url('../images/reviews/ihor/ihor-min-icon.png') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+
+  @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url('../images/reviews/ihor/ihor-min-icon@1.5x.png') 0 / 100% no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: url('../images/reviews/ihor/ihor-min-icon@2x.png') 0 / 100% no-repeat;
+  }
+}
+
+.slider .slick-dots li:nth-child(4) button {
+  background: url('../images/reviews/maryna/maryna-min-icon.png') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+
+  @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url('../images/reviews/maryna/maryna-min-icon@1.5x.png') 0 / 100% no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: url('../images/reviews/maryna/maryna-min-icon@2x.png') 0 / 100% no-repeat;
+  }
+}
+
+.slider .slick-dots li:nth-child(5) button {
+  background: url('../images/reviews/valeria/valeria-min-icon.png') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+
+  @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url('../images/reviews/valeria/valeria-min-icon@1.5x.png') 0 / 100% no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: url('../images/reviews/valeria/valeria-min-icon@2x.png') 0 / 100% no-repeat;
+  }
+}
+
+.slider .slick-dots li:nth-child(6) button {
+  background: url('../images/reviews/viktoria/viktoria-min-icon.png') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+
+  @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url('../images/reviews/viktoria/viktoria-min-icon@1.5x.png') 0 / 100% no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: url('../images/reviews/viktoria/viktoria-min-icon@2x.png') 0 / 100% no-repeat;
+  }
+}
+
+.slider .slick-dots li:nth-child(7) button {
+  background: url('../images/reviews/vitaliyk/vitaliyk-min-icon.png') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+
+  @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url('../images/reviews/vitaliyk/vitaliyk-min-icon@1.5x.png') 0 / 100% no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: url('../images/reviews/vitaliyk/vitaliyk-min-icon@2x.png') 0 / 100% no-repeat;
+  }
+}
+
+.slider .slick-dots li:nth-child(8) button {
+  background: url('../images/reviews/vitaliys/vitaliys-min-icon.png') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+
+  @media (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url('../images/reviews/vitaliys/vitaliys-min-icon@1.5x.png') 0 / 100% no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: url('../images/reviews/vitaliys/vitaliys-min-icon@2x.png') 0 / 100% no-repeat;
+  }
+}
+
+.slider .slick-dots li.slick-active button {
+  width: 64px;
+  height: 64px;
+  opacity: 1;
+}
+
+/* slide */
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.slider-mini {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 50px;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &.slick-current img {
+      width: 64px;
+      height: 64px;
+      opacity: 1;
+    }
+  }
+}
