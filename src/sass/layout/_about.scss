@@ -51,7 +51,7 @@
 }
 
 .about__info {
-  @media screen and (min-width: $tablet) and (max-width: 1365px) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
     width: 401px;
   }
 
@@ -113,8 +113,8 @@
   margin-right: 9px;
 
   @media screen and (min-width: $desktop) {
-    min-width: 24.41px;
-    max-width: 24.41px;
+    min-width: 24px;
+    max-width: 24px;
     height: 20px;
     margin-right: 34px;
   }
@@ -153,12 +153,12 @@
     content: '';
     top: -20px;
     left: 0;
-    width: 17.08px;
+    width: 17px;
     height: 2px;
     background-color: $accent-color;
 
     @media screen and (min-width: $desktop) {
-      width: 24.41px;
+      width: 24px;
     }
   }
 }
