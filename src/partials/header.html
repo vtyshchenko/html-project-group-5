@@ -2,7 +2,9 @@
 <header class="header">
     <div class="container header__container">
         <!-- logo -->
+        <a class="header__logo-link link" href="#">
         <include src="./partials/logo.html"></include>
+        </a>
         <div class="header__content-wrapper">
             <!-- navigation -->
             <nav class="header__nav">
@@ -36,11 +38,12 @@
     <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
             <!-- button for close mobile menu window -->
-            <button class="mobile-menu__close-buton" type="button">
+            <button class="mobile-menu__close-button" type="button" data-menu-close>
                 <svg class="mobile-menu_close-icon" width="30" height="30">
                     <use href="./images/icons.svg#close-icon"></use>
                 </svg>
             </button>
         </div>
     </div>
+    <!-- <include src="./partials/mobile-menu.html"></include> -->
 </header>

@@ -1,16 +1,11 @@
 .logo {
-  &__link {
-    display: block;
+  display: block;
 
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 1.1;
-    letter-spacing: 0.04em;
-    color: $main-text-color;
-
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  color: $main-text-color;
 
   &__text-first-line {
     display: flex;
