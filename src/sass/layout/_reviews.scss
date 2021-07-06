@@ -75,7 +75,6 @@
   /* Контейнер для текста изображения */
   &__caption-container {
     text-align: center;
-    //   background-color: #222;
     padding: 0 20px;
 
     @media screen and (min-width: $tablet) {
@@ -167,79 +166,16 @@
   }
 }
 
-// // * {
-// //   box-sizing: border-box;
-// // }
-
 /* Добавить указатель при наведении на миниатюры изображений */
 .cursor {
   cursor: pointer;
 }
-
-// // /* Вперед и предыдущие кнопки */
-// // .prev,
-// // .next {
-// //   background-color: white;
-// //   border: none;
-// //   text-align: center;
-// //   text-decoration: none;
-// //   display: inline-block;
-// //   color: $accent-color;
-
-// //   cursor: pointer;
-// //   position: absolute;
-// //   bottom: 1%;
-// //   width: auto;
-// //   padding: 12px 0;
-// //   margin-top: -50px;
-// //   border-radius: 50%;
-// // }
-
-// // /* Позиция "next кнопка" на право */
-// // .next {
-// //   right: 0;
-// //   margin-right: 20px;
-// // }
-
-// // /* При наведении курсора добавьте черный цвет фона с небольшим количеством прозрачного */
-// // .prev:hover,
-// // .next:hover {
-// //   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
-// // }
-
-// // .row {
-// //   padding-right: 44px;
-// //   padding-left: 44px;
-// //   width: 290px;
-// //   margin: 0 auto;
-// // }
-
-// // .row:after {
-// //   content: '';
-// //   display: table;
-// //   clear: both;
-// // }
-
-// // /* Шесть колонн бок о бок */
-// // .column {
-// //   float: left;
-// //   margin-right: 10px;
-// // }
 
 /* Добавить эффект прозрачности для миниатюрных изображений */
 .demo {
   opacity: 0.6;
   width: 54px;
 }
-
-// // .active {
-// //   width: 64px;
-// // }
-
-// // .active,
-// // .demo:hover {
-// //   opacity: 1;
-// // }
 
 .hidden {
   display: none;
