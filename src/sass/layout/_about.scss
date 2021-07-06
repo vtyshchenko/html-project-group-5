@@ -1,13 +1,13 @@
 .about {
-  padding-top: 750px;
+  padding-top: 270px;
   padding-bottom: 25px;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 750x;
+    padding-top: 302px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-top: 750px;
+    padding-top: 329px;
     padding-bottom: 65px;
   }
 }
@@ -38,6 +38,7 @@
 
 .about__photo-set {
   margin-bottom: 20px;
+  transition: transform $anim-duration $anim-timing-function;
 
   @media screen and (min-width: $tablet) {
     margin-right: 43px;
@@ -193,4 +194,9 @@
 
 .about__certificate:visited {
   color: $accent-color;
+}
+
+.about__photo-set:hover,
+.about__photo-set:focus {
+  transform: scale(1.1);
 }
