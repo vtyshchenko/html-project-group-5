@@ -1,7 +1,7 @@
 .benefits {
   position: absolute;
   bottom: -239px;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile-middle) {
     top: 50%;
     left: 50%;
     transform: translate(-242px, 450px);
