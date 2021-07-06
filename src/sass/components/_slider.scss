@@ -1,0 +1,116 @@
+/* slick */
+.slider {
+  position: relative;
+  padding: 0 60px;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  font-size: 0;
+  top: 50%;
+  z-index: 1000;
+  width: 30px;
+  height: 50px;
+  margin: -30px 0 0 0;
+  border: none;
+  cursor: pointer;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url('../images/reviews/arrow-prev.svg') 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url('../images/reviews/arrow-next.svg') 0 / 100% no-repeat;
+}
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.slider .slick-dots li:nth-child(1) button {
+  background: url('../images/reviews/volodymyr/volodymyr-mobile.webp') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.slider .slick-dots li:nth-child(2) button {
+  background: url('../images/reviews/emma/emma-min-icon.webp') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.slider .slick-dots li:nth-child(3) button {
+  background: url('../images/reviews/ihor/ihor-min-icon.webp') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.slider .slick-dots li:nth-child(4) button {
+  background: url('../images/reviews/maryna/maryna-min-icon.webp') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.slider .slick-dots li:nth-child(5) button {
+  background: url('../images/reviews/valeria/valeria-min-icon.webp') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.slider .slick-dots li:nth-child(6) button {
+  background: url('../images/reviews/viktoria/viktoria-min-icon.webp') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.slider .slick-dots li:nth-child(7) button {
+  background: url('../images/reviews/vitaliyk/vitaliyk-min-icon.webp') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.slider .slick-dots li:nth-child(8) button {
+  background: url('../images/reviews/vitaliys/vitaliys-min-icon.webp') 0 / 100% no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.slider .slick-dots li.slick-active button {
+  width: 64px;
+  height: 64px;
+}
+
+/* slide */
+.slick-track {
+  display: flex;
+}

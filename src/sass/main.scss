@@ -1,6 +1,5 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
-@import './lib/chief-slider-with-prefixes.css';
 
 @import './common/common';
 @import './common/base';
@@ -12,6 +11,7 @@
 @import './components/button';
 @import './components/logo';
 @import './components/social-icons-list';
+@import './components/_slider';
 
 @import './layout/header';
 @import './layout/hero';

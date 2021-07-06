@@ -1,1467 +1,1076 @@
 <article class="reviews">
-  <!-- Контейнер для галереи изображений -->
-  <div class="container reviews__container">
-    <h2 class="reviews__title">Feedback from graduates</h2>
-    <!-- Полноразмерные изображения с числовым текстом -->
-    <div class="slider">
-      <div class="slider__container">
-        <div class="slider__wrapper">
-          <div class="slider__items">
-            <div class="slider__item">
-              <div class="reviews__slides">
-                <div class="reviews__slide-contscts">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/reviews/volodymyr/volodymyr-desktop.webp      1x,
-                        ./images/reviews/volodymyr/volodymyr-desktop@1.5x.webp 1.5x,
-                        ./images/reviews/volodymyr/volodymyr-desktop@2x.webp   2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/volodymyr/volodymyr-tablet.webp      1x,
-                        ./images/reviews/volodymyr/volodymyr-tablet@1.5x.webp 1.5x,
-                        ./images/reviews/volodymyr/volodymyr-tablet@2x.webp   2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/volodymyr/volodymyr-mobile.webp      1x,
-                        ./images/reviews/volodymyr/volodymyr-mobile@1.5x.webp 1.5x,
-                        ./images/reviews/volodymyr/volodymyr-mobile@2x.webp   2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
+  <div class="container">
+    <!-- Контейнер для галереи изображений -->
+    <div class="reviews__container">
+      <h2 class="reviews__title">Feedback from graduates</h2>
 
-                    <source
-                      srcset="
-                        ./images/reviews/volodymyr/volodymyr-desktop.png      1x,
-                        ./images/reviews/volodymyr/volodymyr-desktop@1.5x.png 1.5x,
-                        ./images/reviews/volodymyr/volodymyr-desktop@2x.png   2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/volodymyr/volodymyr-tablet.png      1x,
-                        ./images/reviews/volodymyr/volodymyr-tablet@1.5x.png 1.5x,
-                        ./images/reviews/volodymyr/volodymyr-tablet@2x.png   2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/volodymyr/volodymyr-mobile.png      1x,
-                        ./images/reviews/volodymyr/volodymyr-mobile@1.5x.png 1.5x,
-                        ./images/reviews/volodymyr/volodymyr-mobile@2x.png   2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <img class="reviews__slide-image" src="#" />
-                  </picture>
-                  <div class="socials">
-                    <ul class="list social__list">
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+      <div class="slider">
+        <div class="slider__item reviews__slides">
+          <div class="reviews__slide-contscts">
+            <picture>
+              <source
+                srcset="
+                  ./images/reviews/volodymyr/volodymyr-desktop.webp      1x,
+                  ./images/reviews/volodymyr/volodymyr-desktop@1.5x.webp 1.5x,
+                  ./images/reviews/volodymyr/volodymyr-desktop@2x.webp   2x
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/volodymyr/volodymyr-tablet.webp      1x,
+                  ./images/reviews/volodymyr/volodymyr-tablet@1.5x.webp 1.5x,
+                  ./images/reviews/volodymyr/volodymyr-tablet@2x.webp   2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/volodymyr/volodymyr-mobile.webp      1x,
+                  ./images/reviews/volodymyr/volodymyr-mobile@1.5x.webp 1.5x,
+                  ./images/reviews/volodymyr/volodymyr-mobile@2x.webp   2x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
 
-                <div class="slides__caption-container">
-                  <h3 class="slides__name">Volodymyr Tyshchenko</h3>
-                  <div class="slides__description">
-                    <p class="slides__graduated">
-                      Graduated from 2015, National University of Bioresources and natural history
-                      of Ukraine
-                    </p>
-                    <p class="slides__biography shrinkable" id="shrinkMe">
-                      <span>
-                        In a short time with Elena, I mastered grammar and replenished my completely
-                        empty vocabulary. From the first lesson I realized that I was on my plate.
-                        Elena and I became friends because she was really worried about my success.
-                        She became an authority for me, but I did not tremble in class, fearing to
-                        make the slightest mistake. Now I can brag that I'm student
-                        <span id="shrinkMeOverflow" class="hidden"
-                          >In a short time with Elena, I mastered grammar and replenished my
-                          completely empty vocabulary. From the first lesson I realized that I was
-                          on my plate. Elena and I became friends because she was really worried
-                          about my success. She became an authority for me, but I did not tremble in
-                          class, fearing to make the slightest mistake. Now I can brag that I'm
-                          student</span
-                        >
-                      </span>
-                      <span id="shrinkMedots"> ... </span>
-                      <a
-                        class="link-text-toggle"
-                        id="shrinkMeMoreLink"
-                        href="#!"
-                        onclick="showMore('shrinkMe');"
-                      >
-                        Read more</a
-                      >
-                      <a
-                        class="link-text-toggle hidden"
-                        id="shrinkMeLessLink"
-                        href="#!"
-                        onclick="showLess('shrinkMe');"
-                        >less</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <source
+                srcset="
+                  ./images/reviews/volodymyr/volodymyr-desktop.png      1x,
+                  ./images/reviews/volodymyr/volodymyr-desktop@1.5x.png 1.5x,
+                  ./images/reviews/volodymyr/volodymyr-desktop@2x.png   2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/volodymyr/volodymyr-tablet.png      1x,
+                  ./images/reviews/volodymyr/volodymyr-tablet@1.5x.png 1.5x,
+                  ./images/reviews/volodymyr/volodymyr-tablet@2x.png   2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/volodymyr/volodymyr-mobile.png      1x,
+                  ./images/reviews/volodymyr/volodymyr-mobile@1.5x.png 1.5x,
+                  ./images/reviews/volodymyr/volodymyr-mobile@2x.png   2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img class="reviews__slide-image" src="#" />
+            </picture>
+            <div class="socials">
+              <ul class="list social__list">
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="slider__item">
-              <div class="reviews__slides">
-                <div class="reviews__slide-contscts">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/reviews/emma/emma-desktop.webp      1x,
-                        ./images/reviews/emma/emma-desktop@1.5x.webp 1.5x,
-                        ./images/reviews/emma/emma-desktop@2x.webp   2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/emma/emma-tablet.webp      1x,
-                        ./images/reviews/emma/emma-tablet@1.5x.webp 1.5x,
-                        ./images/reviews/emma/emma-tablet@2x.webp   2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/emma/emma-mobile.webp      1x,
-                        ./images/reviews/emma/emma-mobile@1.5x.webp 1.5x,
-                        ./images/reviews/emma/emma-mobile@2x.webp   2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
+          </div>
 
-                    <source
-                      srcset="
-                        ./images/reviews/emma/emma-desktop.png      1x,
-                        ./images/reviews/emma/emma-desktop@1.5x.png 1.5x,
-                        ./images/reviews/emma/emma-desktop@2x.png   2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/emma/emma-tablet.png      1x,
-                        ./images/reviews/emma/emma-tablet@1.5x.png 1.5x,
-                        ./images/reviews/emma/emma-tablet@2x.png   2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/emma/emma-mobile.png      1x,
-                        ./images/reviews/emma/emma-mobile@1.5x.png 1.5x,
-                        ./images/reviews/emma/emma-mobile@2x.png   2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <img class="reviews__slide-image" src="#" />
-                  </picture>
-                  <div class="socials">
-                    <ul class="list social__list">
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="slides__caption-container">
-                  <h3 class="slides__name">Emma Vasylyk</h3>
-                  <div class="slides__description">
-                    <p class="slides__graduated">
-                      Graduated from 2015, National University of Bioresources and natural history
-                      of Ukraine
-                    </p>
-                    <p class="slides__biography shrinkable" id="shrinkMe1">
-                      <span>
-                        In a short time with Elena, I mastered grammar and replenished my completely
-                        empty vocabulary. From the first lesson I realized that I was on my plate.
-                        Elena and I became friends because she was really worried about my success.
-                        She became an authority for me, but I did not tremble in class, fearing to
-                        make the slightest mistake. Now I can brag that I'm student
-                        <span id="shrinkMe1Overflow" class="hidden"
-                          >In a short time with Elena, I mastered grammar and replenished my
-                          completely empty vocabulary. From the first lesson I realized that I was
-                          on my plate. Elena and I became friends because she was really worried
-                          about my success. She became an authority for me, but I did not tremble in
-                          class, fearing to make the slightest mistake. Now I can brag that I'm
-                          student</span
-                        >
-                      </span>
-                      <span id="shrinkMe1dots"> ... </span>
-                      <a
-                        class="link-text-toggle"
-                        id="shrinkMe1MoreLink"
-                        href="#!"
-                        onclick="showMore('shrinkMe1');"
-                      >
-                        Read more</a
-                      >
-                      <a
-                        class="link-text-toggle hidden"
-                        id="shrinkMe1LessLink"
-                        href="#!"
-                        onclick="showLess('shrinkMe1');"
-                        >less</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div class="slides__caption-container">
+            <h3 class="slides__name">Volodymyr Tyshchenko</h3>
+            <div class="slides__description">
+              <p class="slides__graduated">
+                Graduated from 2015, National University of Bioresources and natural history of
+                Ukraine
+              </p>
+              <p class="slides__biography shrinkable" id="shrinkMe">
+                <span>
+                  In a short time with Elena, I mastered grammar and replenished my completely empty
+                  vocabulary. From the first lesson I realized that I was on my plate. Elena and I
+                  became friends because she was really worried about my success. She became an
+                  authority for me, but I did not tremble in class, fearing to make the slightest
+                  mistake. Now I can brag that I'm student
+                  <span id="shrinkMeOverflow" class="hidden"
+                    >In a short time with Elena, I mastered grammar and replenished my completely
+                    empty vocabulary. From the first lesson I realized that I was on my plate. Elena
+                    and I became friends because she was really worried about my success. She became
+                    an authority for me, but I did not tremble in class, fearing to make the
+                    slightest mistake. Now I can brag that I'm student</span
+                  >
+                </span>
+                <span id="shrinkMedots"> ... </span>
+                <a
+                  class="link-text-toggle"
+                  id="shrinkMeMoreLink"
+                  href="#!"
+                  onclick="showMore('shrinkMe');"
+                >
+                  Read more</a
+                >
+                <a
+                  class="link-text-toggle hidden"
+                  id="shrinkMeLessLink"
+                  href="#!"
+                  onclick="showLess('shrinkMe');"
+                  >less</a
+                >
+              </p>
             </div>
-            <div class="slider__item">
-              <div class="reviews__slides">
-                <div class="reviews__slide-contscts">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/reviews/ihor/ihor-desktop.webp      1x,
-                        ./images/reviews/ihor/ihor-desktop@1.5x.webp 1.5x,
-                        ./images/reviews/ihor/ihor-desktop@2x.webp   2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/ihor/ihor-tablet.webp      1x,
-                        ./images/reviews/ihor/ihor-tablet@1.5x.webp 1.5x,
-                        ./images/reviews/ihor/ihor-tablet@2x.webp   2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/ihor/ihor-mobile.webp      1x,
-                        ./images/reviews/ihor/ihor-mobile@1.5x.webp 1.5x,
-                        ./images/reviews/ihor/ihor-mobile@2x.webp   2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
+          </div>
+        </div>
+        <div class="slider__item reviews__slides">
+          <div class="reviews__slide-contscts">
+            <picture>
+              <source
+                srcset="
+                  ./images/reviews/emma/emma-desktop.webp      1x,
+                  ./images/reviews/emma/emma-desktop@1.5x.webp 1.5x,
+                  ./images/reviews/emma/emma-desktop@2x.webp   2x
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/emma/emma-tablet.webp      1x,
+                  ./images/reviews/emma/emma-tablet@1.5x.webp 1.5x,
+                  ./images/reviews/emma/emma-tablet@2x.webp   2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/emma/emma-mobile.webp      1x,
+                  ./images/reviews/emma/emma-mobile@1.5x.webp 1.5x,
+                  ./images/reviews/emma/emma-mobile@2x.webp   2x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
 
-                    <source
-                      srcset="
-                        ./images/reviews/ihor/ihor-desktop.png      1x,
-                        ./images/reviews/ihor/ihor-desktop@1.5x.png 1.5x,
-                        ./images/reviews/ihor/ihor-desktop@2x.png   2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/ihor/ihor-tablet.png      1x,
-                        ./images/reviews/ihor/ihor-tablet@1.5x.png 1.5x,
-                        ./images/reviews/ihor/ihor-tablet@2x.png   2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/ihor/ihor-mobile.png      1x,
-                        ./images/reviews/ihor/ihor-mobile@1.5x.png 1.5x,
-                        ./images/reviews/ihor/ihor-mobile@2x.png   2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <img class="reviews__slide-image" src="#" />
-                  </picture>
-                  <div class="socials">
-                    <ul class="list social__list">
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="slides__caption-container">
-                  <h3 class="slides__name">Ihor Dombyk</h3>
-                  <div class="slides__description">
-                    <p class="slides__graduated">
-                      Graduated from 2015, National University of Bioresources and natural history
-                      of Ukraine
-                    </p>
-                    <p class="slides__biography shrinkable" id="shrinkMe2">
-                      <span>
-                        In a short time with Elena, I mastered grammar and replenished my completely
-                        empty vocabulary. From the first lesson I realized that I was on my plate.
-                        Elena and I became friends because she was really worried about my success.
-                        She became an authority for me, but I did not tremble in class, fearing to
-                        make the slightest mistake. Now I can brag that I'm student
-                        <span id="shrinkMe2Overflow" class="hidden"
-                          >In a short time with Elena, I mastered grammar and replenished my
-                          completely empty vocabulary. From the first lesson I realized that I was
-                          on my plate. Elena and I became friends because she was really worried
-                          about my success. She became an authority for me, but I did not tremble in
-                          class, fearing to make the slightest mistake. Now I can brag that I'm
-                          student</span
-                        >
-                      </span>
-                      <span id="shrinkMe2dots"> ... </span>
-                      <a
-                        class="link-text-toggle"
-                        id="shrinkMe2MoreLink"
-                        href="#!"
-                        onclick="showMore('shrinkMe2');"
-                      >
-                        Read more</a
-                      >
-                      <a
-                        class="link-text-toggle hidden"
-                        id="shrinkMe2LessLink"
-                        href="#!"
-                        onclick="showLess('shrinkMe2');"
-                        >less</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <source
+                srcset="
+                  ./images/reviews/emma/emma-desktop.png      1x,
+                  ./images/reviews/emma/emma-desktop@1.5x.png 1.5x,
+                  ./images/reviews/emma/emma-desktop@2x.png   2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/emma/emma-tablet.png      1x,
+                  ./images/reviews/emma/emma-tablet@1.5x.png 1.5x,
+                  ./images/reviews/emma/emma-tablet@2x.png   2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/emma/emma-mobile.png      1x,
+                  ./images/reviews/emma/emma-mobile@1.5x.png 1.5x,
+                  ./images/reviews/emma/emma-mobile@2x.png   2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img class="reviews__slide-image" src="#" />
+            </picture>
+            <div class="socials">
+              <ul class="list social__list">
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="slider__item">
-              <div class="reviews__slides">
-                <div class="reviews__slide-contscts">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/reviews/maryna/maryna-desktop.webp      1x,
-                        ./images/reviews/maryna/maryna-desktop@1.5x.webp 1.5x,
-                        ./images/reviews/maryna/maryna-desktop@2x.webp   2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/maryna/maryna-tablet.webp      1x,
-                        ./images/reviews/maryna/maryna-tablet@1.5x.webp 1.5x,
-                        ./images/reviews/maryna/maryna-tablet@2x.webp   2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/maryna/maryna-mobile.webp      1x,
-                        ./images/reviews/maryna/maryna-mobile@1.5x.webp 1.5x,
-                        ./images/reviews/maryna/maryna-mobile@2x.webp   2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
+          </div>
 
-                    <source
-                      srcset="
-                        ./images/reviews/maryna/maryna-desktop.png      1x,
-                        ./images/reviews/maryna/maryna-desktop@1.5x.png 1.5x,
-                        ./images/reviews/maryna/maryna-desktop@2x.png   2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/maryna/maryna-tablet.png      1x,
-                        ./images/reviews/maryna/maryna-tablet@1.5x.png 1.5x,
-                        ./images/reviews/maryna/maryna-tablet@2x.png   2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/maryna/maryna-mobile.png      1x,
-                        ./images/reviews/maryna/maryna-mobile@1.5x.png 1.5x,
-                        ./images/reviews/maryna/maryna-mobile@2x.png   2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <img class="reviews__slide-image" src="#" />
-                  </picture>
-                  <div class="socials">
-                    <ul class="list social__list">
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="slides__caption-container">
-                  <h3 class="slides__name">Maryna Ostplyuk</h3>
-                  <div class="slides__description">
-                    <p class="slides__graduated">
-                      Graduated from 2015, National University of Bioresources and natural history
-                      of Ukraine
-                    </p>
-                    <p class="slides__biography shrinkable" id="shrinkMe3">
-                      <span>
-                        In a short time with Elena, I mastered grammar and replenished my completely
-                        empty vocabulary. From the first lesson I realized that I was on my plate.
-                        Elena and I became friends because she was really worried about my success.
-                        She became an authority for me, but I did not tremble in class, fearing to
-                        make the slightest mistake. Now I can brag that I'm student
-                        <span id="shrinkMe3Overflow" class="hidden"
-                          >In a short time with Elena, I mastered grammar and replenished my
-                          completely empty vocabulary. From the first lesson I realized that I was
-                          on my plate. Elena and I became friends because she was really worried
-                          about my success. She became an authority for me, but I did not tremble in
-                          class, fearing to make the slightest mistake. Now I can brag that I'm
-                          student</span
-                        >
-                      </span>
-                      <span id="shrinkMe3dots"> ... </span>
-                      <a
-                        class="link-text-toggle"
-                        id="shrinkMe3MoreLink"
-                        href="#!"
-                        onclick="showMore('shrinkMe3');"
-                      >
-                        Read more</a
-                      >
-                      <a
-                        class="link-text-toggle hidden"
-                        id="shrinkMe3LessLink"
-                        href="#!"
-                        onclick="showLess('shrinkMe3');"
-                        >less</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div class="slides__caption-container">
+            <h3 class="slides__name">Emma Vasylyk</h3>
+            <div class="slides__description">
+              <p class="slides__graduated">
+                Graduated from 2015, National University of Bioresources and natural history of
+                Ukraine
+              </p>
+              <p class="slides__biography shrinkable" id="shrinkMe1">
+                <span>
+                  In a short time with Elena, I mastered grammar and replenished my completely empty
+                  vocabulary. From the first lesson I realized that I was on my plate. Elena and I
+                  became friends because she was really worried about my success. She became an
+                  authority for me, but I did not tremble in class, fearing to make the slightest
+                  mistake. Now I can brag that I'm student
+                  <span id="shrinkMe1Overflow" class="hidden"
+                    >In a short time with Elena, I mastered grammar and replenished my completely
+                    empty vocabulary. From the first lesson I realized that I was on my plate. Elena
+                    and I became friends because she was really worried about my success. She became
+                    an authority for me, but I did not tremble in class, fearing to make the
+                    slightest mistake. Now I can brag that I'm student</span
+                  >
+                </span>
+                <span id="shrinkMe1dots"> ... </span>
+                <a
+                  class="link-text-toggle"
+                  id="shrinkMe1MoreLink"
+                  href="#!"
+                  onclick="showMore('shrinkMe1');"
+                >
+                  Read more</a
+                >
+                <a
+                  class="link-text-toggle hidden"
+                  id="shrinkMe1LessLink"
+                  href="#!"
+                  onclick="showLess('shrinkMe1');"
+                  >less</a
+                >
+              </p>
             </div>
-            <div class="slider__item">
-              <div class="reviews__slides">
-                <div class="reviews__slide-contscts">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/reviews/valeria/valeria-desktop.webp      1x,
-                        ./images/reviews/valeria/valeria-desktop@1.5x.webp 1.5x,
-                        ./images/reviews/valeria/valeria-desktop@2x.webp   2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/valeria/valeria-tablet.webp      1x,
-                        ./images/reviews/valeria/valeria-tablet@1.5x.webp 1.5x,
-                        ./images/reviews/valeria/valeria-tablet@2x.webp   2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/valeria/valeria-mobile.webp      1x,
-                        ./images/reviews/valeria/valeria-mobile@1.5x.webp 1.5x,
-                        ./images/reviews/valeria/valeria-mobile@2x.webp   2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
+          </div>
+        </div>
+        <div class="slider__item reviews__slides">
+          <div class="reviews__slide-contscts">
+            <picture>
+              <source
+                srcset="
+                  ./images/reviews/ihor/ihor-desktop.webp      1x,
+                  ./images/reviews/ihor/ihor-desktop@1.5x.webp 1.5x,
+                  ./images/reviews/ihor/ihor-desktop@2x.webp   2x
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/ihor/ihor-tablet.webp      1x,
+                  ./images/reviews/ihor/ihor-tablet@1.5x.webp 1.5x,
+                  ./images/reviews/ihor/ihor-tablet@2x.webp   2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/ihor/ihor-mobile.webp      1x,
+                  ./images/reviews/ihor/ihor-mobile@1.5x.webp 1.5x,
+                  ./images/reviews/ihor/ihor-mobile@2x.webp   2x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
 
-                    <source
-                      srcset="
-                        ./images/reviews/valeria/valeria-desktop.png      1x,
-                        ./images/reviews/valeria/valeria-desktop@1.5x.png 1.5x,
-                        ./images/reviews/valeria/valeria-desktop@2x.png   2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/valeria/valeria-tablet.png      1x,
-                        ./images/reviews/valeria/valeria-tablet@1.5x.png 1.5x,
-                        ./images/reviews/valeria/valeria-tablet@2x.png   2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/valeria/valeria-mobile.png      1x,
-                        ./images/reviews/valeria/valeria-mobile@1.5x.png 1.5x,
-                        ./images/reviews/valeria/valeria-mobile@2x.png   2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <img class="reviews__slide-image" src="#" />
-                  </picture>
-                  <div class="socials">
-                    <ul class="list social__list">
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="slides__caption-container">
-                  <h3 class="slides__name">Valerya Shinger</h3>
-                  <div class="slides__description">
-                    <p class="slides__graduated">
-                      Graduated from 2015, National University of Bioresources and natural history
-                      of Ukraine
-                    </p>
-                    <p class="slides__biography shrinkable" id="shrinkMe4">
-                      <span>
-                        In a short time with Elena, I mastered grammar and replenished my completely
-                        empty vocabulary. From the first lesson I realized that I was on my plate.
-                        Elena and I became friends because she was really worried about my success.
-                        She became an authority for me, but I did not tremble in class, fearing to
-                        make the slightest mistake. Now I can brag that I'm student
-                        <span id="shrinkMe4Overflow" class="hidden"
-                          >In a short time with Elena, I mastered grammar and replenished my
-                          completely empty vocabulary. From the first lesson I realized that I was
-                          on my plate. Elena and I became friends because she was really worried
-                          about my success. She became an authority for me, but I did not tremble in
-                          class, fearing to make the slightest mistake. Now I can brag that I'm
-                          student</span
-                        >
-                      </span>
-                      <span id="shrinkMe4dots"> ... </span>
-                      <a
-                        class="link-text-toggle"
-                        id="shrinkMe4MoreLink"
-                        href="#!"
-                        onclick="showMore('shrinkMe4');"
-                      >
-                        Read more</a
-                      >
-                      <a
-                        class="link-text-toggle hidden"
-                        id="shrinkMe4LessLink"
-                        href="#!"
-                        onclick="showLess('shrinkMe4');"
-                        >less</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <source
+                srcset="
+                  ./images/reviews/ihor/ihor-desktop.png      1x,
+                  ./images/reviews/ihor/ihor-desktop@1.5x.png 1.5x,
+                  ./images/reviews/ihor/ihor-desktop@2x.png   2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/ihor/ihor-tablet.png      1x,
+                  ./images/reviews/ihor/ihor-tablet@1.5x.png 1.5x,
+                  ./images/reviews/ihor/ihor-tablet@2x.png   2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/ihor/ihor-mobile.png      1x,
+                  ./images/reviews/ihor/ihor-mobile@1.5x.png 1.5x,
+                  ./images/reviews/ihor/ihor-mobile@2x.png   2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img class="reviews__slide-image" src="#" />
+            </picture>
+            <div class="socials">
+              <ul class="list social__list">
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="slider__item">
-              <div class="reviews__slides">
-                <div class="reviews__slide-contscts">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/reviews/viktoria/viktoria-desktop.webp      1x,
-                        ./images/reviews/viktoria/viktoria-desktop@1.5x.webp 1.5x,
-                        ./images/reviews/viktoria/viktoria-desktop@2x.webp   2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/viktoria/viktoria-tablet.webp      1x,
-                        ./images/reviews/viktoria/viktoria-tablet@1.5x.webp 1.5x,
-                        ./images/reviews/viktoria/viktoria-tablet@2x.webp   2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/viktoria/viktoria-mobile.webp      1x,
-                        ./images/reviews/viktoria/viktoria-mobile@1.5x.webp 1.5x,
-                        ./images/reviews/viktoria/viktoria-mobile@2x.webp   2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
+          </div>
 
-                    <source
-                      srcset="
-                        ./images/reviews/viktoria/viktoria-desktop.png      1x,
-                        ./images/reviews/viktoria/viktoria-desktop@1.5x.png 1.5x,
-                        ./images/reviews/viktoria/viktoria-desktop@2x.png   2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/viktoria/viktoria-tablet.png      1x,
-                        ./images/reviews/viktoria/viktoria-tablet@1.5x.png 1.5x,
-                        ./images/reviews/viktoria/viktoria-tablet@2x.png   2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/viktoria/viktoria-mobile.png      1x,
-                        ./images/reviews/viktoria/viktoria-mobile@1.5x.png 1.5x,
-                        ./images/reviews/viktoria/viktoria-mobile@2x.png   2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <img class="reviews__slide-image" src="#" />
-                  </picture>
-                  <div class="socials">
-                    <ul class="list social__list">
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="slides__caption-container">
-                  <h3 class="slides__name">Viktorya</h3>
-                  <div class="slides__description">
-                    <p class="slides__graduated">
-                      Graduated from 2015, National University of Bioresources and natural history
-                      of Ukraine
-                    </p>
-                    <p class="slides__biography shrinkable" id="shrinkMe5">
-                      <span>
-                        In a short time with Elena, I mastered grammar and replenished my completely
-                        empty vocabulary. From the first lesson I realized that I was on my plate.
-                        Elena and I became friends because she was really worried about my success.
-                        She became an authority for me, but I did not tremble in class, fearing to
-                        make the slightest mistake. Now I can brag that I'm student
-                        <span id="shrinkMe5Overflow" class="hidden"
-                          >In a short time with Elena, I mastered grammar and replenished my
-                          completely empty vocabulary. From the first lesson I realized that I was
-                          on my plate. Elena and I became friends because she was really worried
-                          about my success. She became an authority for me, but I did not tremble in
-                          class, fearing to make the slightest mistake. Now I can brag that I'm
-                          student</span
-                        >
-                      </span>
-                      <span id="shrinkMe5dots"> ... </span>
-                      <a
-                        class="link-text-toggle"
-                        id="shrinkMe5MoreLink"
-                        href="#!"
-                        onclick="showMore('shrinkMe5');"
-                      >
-                        Read more</a
-                      >
-                      <a
-                        class="link-text-toggle hidden"
-                        id="shrinkMe5LessLink"
-                        href="#!"
-                        onclick="showLess('shrinkMe5');"
-                        >less</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div class="slides__caption-container">
+            <h3 class="slides__name">Ihor Dombyk</h3>
+            <div class="slides__description">
+              <p class="slides__graduated">
+                Graduated from 2015, National University of Bioresources and natural history of
+                Ukraine
+              </p>
+              <p class="slides__biography shrinkable" id="shrinkMe2">
+                <span>
+                  In a short time with Elena, I mastered grammar and replenished my completely empty
+                  vocabulary. From the first lesson I realized that I was on my plate. Elena and I
+                  became friends because she was really worried about my success. She became an
+                  authority for me, but I did not tremble in class, fearing to make the slightest
+                  mistake. Now I can brag that I'm student
+                  <span id="shrinkMe2Overflow" class="hidden"
+                    >In a short time with Elena, I mastered grammar and replenished my completely
+                    empty vocabulary. From the first lesson I realized that I was on my plate. Elena
+                    and I became friends because she was really worried about my success. She became
+                    an authority for me, but I did not tremble in class, fearing to make the
+                    slightest mistake. Now I can brag that I'm student</span
+                  >
+                </span>
+                <span id="shrinkMe2dots"> ... </span>
+                <a
+                  class="link-text-toggle"
+                  id="shrinkMe2MoreLink"
+                  href="#!"
+                  onclick="showMore('shrinkMe2');"
+                >
+                  Read more</a
+                >
+                <a
+                  class="link-text-toggle hidden"
+                  id="shrinkMe2LessLink"
+                  href="#!"
+                  onclick="showLess('shrinkMe2');"
+                  >less</a
+                >
+              </p>
             </div>
-            <div class="slider__item">
-              <div class="reviews__slides">
-                <div class="reviews__slide-contscts">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/reviews/vitaliyk/vitaliyk-desktop.webp      1x,
-                        ./images/reviews/vitaliyk/vitaliyk-desktop@1.5x.webp 1.5x,
-                        ./images/reviews/vitaliyk/vitaliyk-desktop@2x.webp   2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/vitaliyk/vitaliyk-tablet.webp      1x,
-                        ./images/reviews/vitaliyk/vitaliyk-tablet@1.5x.webp 1.5x,
-                        ./images/reviews/vitaliyk/vitaliyk-tablet@2x.webp   2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/vitaliyk/vitaliyk-mobile.webp      1x,
-                        ./images/reviews/vitaliyk/vitaliyk-mobile@1.5x.webp 1.5x,
-                        ./images/reviews/vitaliyk/vitaliyk-mobile@2x.webp   2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
+          </div>
+        </div>
+        <div class="slider__item reviews__slides">
+          <div class="reviews__slide-contscts">
+            <picture>
+              <source
+                srcset="
+                  ./images/reviews/maryna/maryna-desktop.webp      1x,
+                  ./images/reviews/maryna/maryna-desktop@1.5x.webp 1.5x,
+                  ./images/reviews/maryna/maryna-desktop@2x.webp   2x
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/maryna/maryna-tablet.webp      1x,
+                  ./images/reviews/maryna/maryna-tablet@1.5x.webp 1.5x,
+                  ./images/reviews/maryna/maryna-tablet@2x.webp   2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/maryna/maryna-mobile.webp      1x,
+                  ./images/reviews/maryna/maryna-mobile@1.5x.webp 1.5x,
+                  ./images/reviews/maryna/maryna-mobile@2x.webp   2x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
 
-                    <source
-                      srcset="
-                        ./images/reviews/vitaliyk/vitaliyk-desktop.png      1x,
-                        ./images/reviews/vitaliyk/vitaliyk-desktop@1.5x.png 1.5x,
-                        ./images/reviews/vitaliyk/vitaliyk-desktop@2x.png   2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/vitaliyk/vitaliyk-tablet.png      1x,
-                        ./images/reviews/vitaliyk/vitaliyk-tablet@1.5x.png 1.5x,
-                        ./images/reviews/vitaliyk/vitaliyk-tablet@2x.png   2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/vitaliyk/vitaliyk-mobile.png      1x,
-                        ./images/reviews/vitaliyk/vitaliyk-mobile@1.5x.png 1.5x,
-                        ./images/reviews/vitaliyk/vitaliyk-mobile@2x.png   2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <img class="reviews__slide-image" src="#" />
-                  </picture>
-                  <div class="socials">
-                    <ul class="list social__list">
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="slides__caption-container">
-                  <h3 class="slides__name">Vitaliy Karpenko</h3>
-                  <div class="slides__description">
-                    <p class="slides__graduated">
-                      Graduated from 2015, National University of Bioresources and natural history
-                      of Ukraine
-                    </p>
-                    <p class="slides__biography shrinkable" id="shrinkMe6">
-                      <span>
-                        In a short time with Elena, I mastered grammar and replenished my completely
-                        empty vocabulary. From the first lesson I realized that I was on my plate.
-                        Elena and I became friends because she was really worried about my success.
-                        She became an authority for me, but I did not tremble in class, fearing to
-                        make the slightest mistake. Now I can brag that I'm student
-                        <span id="shrinkMe6Overflow" class="hidden"
-                          >In a short time with Elena, I mastered grammar and replenished my
-                          completely empty vocabulary. From the first lesson I realized that I was
-                          on my plate. Elena and I became friends because she was really worried
-                          about my success. She became an authority for me, but I did not tremble in
-                          class, fearing to make the slightest mistake. Now I can brag that I'm
-                          student</span
-                        >
-                      </span>
-                      <span id="shrinkMe6dots"> ... </span>
-                      <a
-                        class="link-text-toggle"
-                        id="shrinkMe6MoreLink"
-                        href="#!"
-                        onclick="showMore('shrinkMe6');"
-                      >
-                        Read more</a
-                      >
-                      <a
-                        class="link-text-toggle hidden"
-                        id="shrinkMe6LessLink"
-                        href="#!"
-                        onclick="showLess('shrinkMe6');"
-                        >less</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <source
+                srcset="
+                  ./images/reviews/maryna/maryna-desktop.png      1x,
+                  ./images/reviews/maryna/maryna-desktop@1.5x.png 1.5x,
+                  ./images/reviews/maryna/maryna-desktop@2x.png   2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/maryna/maryna-tablet.png      1x,
+                  ./images/reviews/maryna/maryna-tablet@1.5x.png 1.5x,
+                  ./images/reviews/maryna/maryna-tablet@2x.png   2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/maryna/maryna-mobile.png      1x,
+                  ./images/reviews/maryna/maryna-mobile@1.5x.png 1.5x,
+                  ./images/reviews/maryna/maryna-mobile@2x.png   2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img class="reviews__slide-image" src="#" />
+            </picture>
+            <div class="socials">
+              <ul class="list social__list">
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="slider__item">
-              <div class="reviews__slides">
-                <div class="reviews__slide-contscts">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/reviews/vitaliys/vitaliys-desktop.webp      1x,
-                        ./images/reviews/vitaliys/vitaliys-desktop@1.5x.webp 1.5x,
-                        ./images/reviews/vitaliys/vitaliys-desktop@2x.webp   2x
-                      "
-                      media="(min-width: 1200px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/vitaliys/vitaliys-tablet.webp      1x,
-                        ./images/reviews/vitaliys/vitaliys-tablet@1.5x.webp 1.5x,
-                        ./images/reviews/vitaliys/vitaliys-tablet@2x.webp   2x
-                      "
-                      media="(min-width: 768px)"
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/vitaliys/vitaliys-mobile.webp      1x,
-                        ./images/reviews/vitaliys/vitaliys-mobile@1.5x.webp 1.5x,
-                        ./images/reviews/vitaliys/vitaliys-mobile@2x.webp   2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/webp"
-                    />
+          </div>
 
-                    <source
-                      srcset="
-                        ./images/reviews/vitaliys/vitaliys-desktop.png      1x,
-                        ./images/reviews/vitaliys/vitaliys-desktop@1.5x.png 1.5x,
-                        ./images/reviews/vitaliys/vitaliys-desktop@2x.png   2x
-                      "
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/vitaliys/vitaliys-tablet.png      1x,
-                        ./images/reviews/vitaliys/vitaliys-tablet@1.5x.png 1.5x,
-                        ./images/reviews/vitaliys/vitaliys-tablet@2x.png   2x
-                      "
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="
-                        ./images/reviews/vitaliys/vitaliys-mobile.png      1x,
-                        ./images/reviews/vitaliys/vitaliys-mobile@1.5x.png 1.5x,
-                        ./images/reviews/vitaliys/vitaliys-mobile@2x.png   2x
-                      "
-                      media="(max-width: 767px)"
-                    />
-                    <img class="reviews__slide-image" src="#" />
-                  </picture>
-                  <div class="socials">
-                    <ul class="list social__list">
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="social__item">
-                        <a class="social__link" href="">
-                          <svg class="social__icon">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+          <div class="slides__caption-container">
+            <h3 class="slides__name">Maryna Ostplyuk</h3>
+            <div class="slides__description">
+              <p class="slides__graduated">
+                Graduated from 2015, National University of Bioresources and natural history of
+                Ukraine
+              </p>
+              <p class="slides__biography shrinkable" id="shrinkMe3">
+                <span>
+                  In a short time with Elena, I mastered grammar and replenished my completely empty
+                  vocabulary. From the first lesson I realized that I was on my plate. Elena and I
+                  became friends because she was really worried about my success. She became an
+                  authority for me, but I did not tremble in class, fearing to make the slightest
+                  mistake. Now I can brag that I'm student
+                  <span id="shrinkMe3Overflow" class="hidden"
+                    >In a short time with Elena, I mastered grammar and replenished my completely
+                    empty vocabulary. From the first lesson I realized that I was on my plate. Elena
+                    and I became friends because she was really worried about my success. She became
+                    an authority for me, but I did not tremble in class, fearing to make the
+                    slightest mistake. Now I can brag that I'm student</span
+                  >
+                </span>
+                <span id="shrinkMe3dots"> ... </span>
+                <a
+                  class="link-text-toggle"
+                  id="shrinkMe3MoreLink"
+                  href="#!"
+                  onclick="showMore('shrinkMe3');"
+                >
+                  Read more</a
+                >
+                <a
+                  class="link-text-toggle hidden"
+                  id="shrinkMe3LessLink"
+                  href="#!"
+                  onclick="showLess('shrinkMe3');"
+                  >less</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item reviews__slides">
+          <div class="reviews__slide-contscts">
+            <picture>
+              <source
+                srcset="
+                  ./images/reviews/valeria/valeria-desktop.webp      1x,
+                  ./images/reviews/valeria/valeria-desktop@1.5x.webp 1.5x,
+                  ./images/reviews/valeria/valeria-desktop@2x.webp   2x
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/valeria/valeria-tablet.webp      1x,
+                  ./images/reviews/valeria/valeria-tablet@1.5x.webp 1.5x,
+                  ./images/reviews/valeria/valeria-tablet@2x.webp   2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/valeria/valeria-mobile.webp      1x,
+                  ./images/reviews/valeria/valeria-mobile@1.5x.webp 1.5x,
+                  ./images/reviews/valeria/valeria-mobile@2x.webp   2x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
 
-                <div class="slides__caption-container">
-                  <h3 class="slides__name">Vitaliy Semenenko</h3>
-                  <div class="slides__description">
-                    <p class="slides__graduated">
-                      Graduated from 2015, National University of Bioresources and natural history
-                      of Ukraine
-                    </p>
-                    <p class="slides__biography shrinkable" id="shrinkMe7">
-                      <span>
-                        In a short time with Elena, I mastered grammar and replenished my completely
-                        empty vocabulary. From the first lesson I realized that I was on my plate.
-                        Elena and I became friends because she was really worried about my success.
-                        She became an authority for me, but I did not tremble in class, fearing to
-                        make the slightest mistake. Now I can brag that I'm student
-                        <span id="shrinkMe7Overflow" class="hidden"
-                          >In a short time with Elena, I mastered grammar and replenished my
-                          completely empty vocabulary. From the first lesson I realized that I was
-                          on my plate. Elena and I became friends because she was really worried
-                          about my success. She became an authority for me, but I did not tremble in
-                          class, fearing to make the slightest mistake. Now I can brag that I'm
-                          student</span
-                        >
-                      </span>
-                      <span id="shrinkMe7dots"> ... </span>
-                      <a
-                        class="link-text-toggle"
-                        id="shrinkMe7MoreLink"
-                        href="#!"
-                        onclick="showMore('shrinkMe7');"
-                      >
-                        Read more</a
-                      >
-                      <a
-                        class="link-text-toggle hidden"
-                        id="shrinkMe7LessLink"
-                        href="#!"
-                        onclick="showLess('shrinkMe7');"
-                        >less</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <source
+                srcset="
+                  ./images/reviews/valeria/valeria-desktop.png      1x,
+                  ./images/reviews/valeria/valeria-desktop@1.5x.png 1.5x,
+                  ./images/reviews/valeria/valeria-desktop@2x.png   2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/valeria/valeria-tablet.png      1x,
+                  ./images/reviews/valeria/valeria-tablet@1.5x.png 1.5x,
+                  ./images/reviews/valeria/valeria-tablet@2x.png   2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/valeria/valeria-mobile.png      1x,
+                  ./images/reviews/valeria/valeria-mobile@1.5x.png 1.5x,
+                  ./images/reviews/valeria/valeria-mobile@2x.png   2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img class="reviews__slide-image" src="#" />
+            </picture>
+            <div class="socials">
+              <ul class="list social__list">
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="slides__caption-container">
+            <h3 class="slides__name">Valerya Shinger</h3>
+            <div class="slides__description">
+              <p class="slides__graduated">
+                Graduated from 2015, National University of Bioresources and natural history of
+                Ukraine
+              </p>
+              <p class="slides__biography shrinkable" id="shrinkMe4">
+                <span>
+                  In a short time with Elena, I mastered grammar and replenished my completely empty
+                  vocabulary. From the first lesson I realized that I was on my plate. Elena and I
+                  became friends because she was really worried about my success. She became an
+                  authority for me, but I did not tremble in class, fearing to make the slightest
+                  mistake. Now I can brag that I'm student
+                  <span id="shrinkMe4Overflow" class="hidden"
+                    >In a short time with Elena, I mastered grammar and replenished my completely
+                    empty vocabulary. From the first lesson I realized that I was on my plate. Elena
+                    and I became friends because she was really worried about my success. She became
+                    an authority for me, but I did not tremble in class, fearing to make the
+                    slightest mistake. Now I can brag that I'm student</span
+                  >
+                </span>
+                <span id="shrinkMe4dots"> ... </span>
+                <a
+                  class="link-text-toggle"
+                  id="shrinkMe4MoreLink"
+                  href="#!"
+                  onclick="showMore('shrinkMe4');"
+                >
+                  Read more</a
+                >
+                <a
+                  class="link-text-toggle hidden"
+                  id="shrinkMe4LessLink"
+                  href="#!"
+                  onclick="showLess('shrinkMe4');"
+                  >less</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item reviews__slides">
+          <div class="reviews__slide-contscts">
+            <picture>
+              <source
+                srcset="
+                  ./images/reviews/viktoria/viktoria-desktop.webp      1x,
+                  ./images/reviews/viktoria/viktoria-desktop@1.5x.webp 1.5x,
+                  ./images/reviews/viktoria/viktoria-desktop@2x.webp   2x
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/viktoria/viktoria-tablet.webp      1x,
+                  ./images/reviews/viktoria/viktoria-tablet@1.5x.webp 1.5x,
+                  ./images/reviews/viktoria/viktoria-tablet@2x.webp   2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/viktoria/viktoria-mobile.webp      1x,
+                  ./images/reviews/viktoria/viktoria-mobile@1.5x.webp 1.5x,
+                  ./images/reviews/viktoria/viktoria-mobile@2x.webp   2x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+
+              <source
+                srcset="
+                  ./images/reviews/viktoria/viktoria-desktop.png      1x,
+                  ./images/reviews/viktoria/viktoria-desktop@1.5x.png 1.5x,
+                  ./images/reviews/viktoria/viktoria-desktop@2x.png   2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/viktoria/viktoria-tablet.png      1x,
+                  ./images/reviews/viktoria/viktoria-tablet@1.5x.png 1.5x,
+                  ./images/reviews/viktoria/viktoria-tablet@2x.png   2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/viktoria/viktoria-mobile.png      1x,
+                  ./images/reviews/viktoria/viktoria-mobile@1.5x.png 1.5x,
+                  ./images/reviews/viktoria/viktoria-mobile@2x.png   2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img class="reviews__slide-image" src="#" />
+            </picture>
+            <div class="socials">
+              <ul class="list social__list">
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="slides__caption-container">
+            <h3 class="slides__name">Viktorya</h3>
+            <div class="slides__description">
+              <p class="slides__graduated">
+                Graduated from 2015, National University of Bioresources and natural history of
+                Ukraine
+              </p>
+              <p class="slides__biography shrinkable" id="shrinkMe5">
+                <span>
+                  In a short time with Elena, I mastered grammar and replenished my completely empty
+                  vocabulary. From the first lesson I realized that I was on my plate. Elena and I
+                  became friends because she was really worried about my success. She became an
+                  authority for me, but I did not tremble in class, fearing to make the slightest
+                  mistake. Now I can brag that I'm student
+                  <span id="shrinkMe5Overflow" class="hidden"
+                    >In a short time with Elena, I mastered grammar and replenished my completely
+                    empty vocabulary. From the first lesson I realized that I was on my plate. Elena
+                    and I became friends because she was really worried about my success. She became
+                    an authority for me, but I did not tremble in class, fearing to make the
+                    slightest mistake. Now I can brag that I'm student</span
+                  >
+                </span>
+                <span id="shrinkMe5dots"> ... </span>
+                <a
+                  class="link-text-toggle"
+                  id="shrinkMe5MoreLink"
+                  href="#!"
+                  onclick="showMore('shrinkMe5');"
+                >
+                  Read more</a
+                >
+                <a
+                  class="link-text-toggle hidden"
+                  id="shrinkMe5LessLink"
+                  href="#!"
+                  onclick="showLess('shrinkMe5');"
+                  >less</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item reviews__slides">
+          <div class="reviews__slide-contscts">
+            <picture>
+              <source
+                srcset="
+                  ./images/reviews/vitaliyk/vitaliyk-desktop.webp      1x,
+                  ./images/reviews/vitaliyk/vitaliyk-desktop@1.5x.webp 1.5x,
+                  ./images/reviews/vitaliyk/vitaliyk-desktop@2x.webp   2x
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/vitaliyk/vitaliyk-tablet.webp      1x,
+                  ./images/reviews/vitaliyk/vitaliyk-tablet@1.5x.webp 1.5x,
+                  ./images/reviews/vitaliyk/vitaliyk-tablet@2x.webp   2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/vitaliyk/vitaliyk-mobile.webp      1x,
+                  ./images/reviews/vitaliyk/vitaliyk-mobile@1.5x.webp 1.5x,
+                  ./images/reviews/vitaliyk/vitaliyk-mobile@2x.webp   2x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+
+              <source
+                srcset="
+                  ./images/reviews/vitaliyk/vitaliyk-desktop.png      1x,
+                  ./images/reviews/vitaliyk/vitaliyk-desktop@1.5x.png 1.5x,
+                  ./images/reviews/vitaliyk/vitaliyk-desktop@2x.png   2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/vitaliyk/vitaliyk-tablet.png      1x,
+                  ./images/reviews/vitaliyk/vitaliyk-tablet@1.5x.png 1.5x,
+                  ./images/reviews/vitaliyk/vitaliyk-tablet@2x.png   2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/vitaliyk/vitaliyk-mobile.png      1x,
+                  ./images/reviews/vitaliyk/vitaliyk-mobile@1.5x.png 1.5x,
+                  ./images/reviews/vitaliyk/vitaliyk-mobile@2x.png   2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img class="reviews__slide-image" src="#" />
+            </picture>
+            <div class="socials">
+              <ul class="list social__list">
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="slides__caption-container">
+            <h3 class="slides__name">Vitaliy Karpenko</h3>
+            <div class="slides__description">
+              <p class="slides__graduated">
+                Graduated from 2015, National University of Bioresources and natural history of
+                Ukraine
+              </p>
+              <p class="slides__biography shrinkable" id="shrinkMe6">
+                <span>
+                  In a short time with Elena, I mastered grammar and replenished my completely empty
+                  vocabulary. From the first lesson I realized that I was on my plate. Elena and I
+                  became friends because she was really worried about my success. She became an
+                  authority for me, but I did not tremble in class, fearing to make the slightest
+                  mistake. Now I can brag that I'm student
+                  <span id="shrinkMe6Overflow" class="hidden"
+                    >In a short time with Elena, I mastered grammar and replenished my completely
+                    empty vocabulary. From the first lesson I realized that I was on my plate. Elena
+                    and I became friends because she was really worried about my success. She became
+                    an authority for me, but I did not tremble in class, fearing to make the
+                    slightest mistake. Now I can brag that I'm student</span
+                  >
+                </span>
+                <span id="shrinkMe6dots"> ... </span>
+                <a
+                  class="link-text-toggle"
+                  id="shrinkMe6MoreLink"
+                  href="#!"
+                  onclick="showMore('shrinkMe6');"
+                >
+                  Read more</a
+                >
+                <a
+                  class="link-text-toggle hidden"
+                  id="shrinkMe6LessLink"
+                  href="#!"
+                  onclick="showLess('shrinkMe6');"
+                  >less</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__item reviews__slides">
+          <div class="reviews__slide-contscts">
+            <picture>
+              <source
+                srcset="
+                  ./images/reviews/vitaliys/vitaliys-desktop.webp      1x,
+                  ./images/reviews/vitaliys/vitaliys-desktop@1.5x.webp 1.5x,
+                  ./images/reviews/vitaliys/vitaliys-desktop@2x.webp   2x
+                "
+                media="(min-width: 1200px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/vitaliys/vitaliys-tablet.webp      1x,
+                  ./images/reviews/vitaliys/vitaliys-tablet@1.5x.webp 1.5x,
+                  ./images/reviews/vitaliys/vitaliys-tablet@2x.webp   2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/reviews/vitaliys/vitaliys-mobile.webp      1x,
+                  ./images/reviews/vitaliys/vitaliys-mobile@1.5x.webp 1.5x,
+                  ./images/reviews/vitaliys/vitaliys-mobile@2x.webp   2x
+                "
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+
+              <source
+                srcset="
+                  ./images/reviews/vitaliys/vitaliys-desktop.png      1x,
+                  ./images/reviews/vitaliys/vitaliys-desktop@1.5x.png 1.5x,
+                  ./images/reviews/vitaliys/vitaliys-desktop@2x.png   2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/vitaliys/vitaliys-tablet.png      1x,
+                  ./images/reviews/vitaliys/vitaliys-tablet@1.5x.png 1.5x,
+                  ./images/reviews/vitaliys/vitaliys-tablet@2x.png   2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/reviews/vitaliys/vitaliys-mobile.png      1x,
+                  ./images/reviews/vitaliys/vitaliys-mobile@1.5x.png 1.5x,
+                  ./images/reviews/vitaliys/vitaliys-mobile@2x.png   2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img class="reviews__slide-image" src="#" />
+            </picture>
+            <div class="socials">
+              <ul class="list social__list">
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="">
+                    <svg class="social__icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="slides__caption-container">
+            <h3 class="slides__name">Vitaliy Semenenko</h3>
+            <div class="slides__description">
+              <p class="slides__graduated">
+                Graduated from 2015, National University of Bioresources and natural history of
+                Ukraine
+              </p>
+              <p class="slides__biography shrinkable" id="shrinkMe7">
+                <span>
+                  In a short time with Elena, I mastered grammar and replenished my completely empty
+                  vocabulary. From the first lesson I realized that I was on my plate. Elena and I
+                  became friends because she was really worried about my success. She became an
+                  authority for me, but I did not tremble in class, fearing to make the slightest
+                  mistake. Now I can brag that I'm student
+                  <span id="shrinkMe7Overflow" class="hidden"
+                    >In a short time with Elena, I mastered grammar and replenished my completely
+                    empty vocabulary. From the first lesson I realized that I was on my plate. Elena
+                    and I became friends because she was really worried about my success. She became
+                    an authority for me, but I did not tremble in class, fearing to make the
+                    slightest mistake. Now I can brag that I'm student</span
+                  >
+                </span>
+                <span id="shrinkMe7dots"> ... </span>
+                <a
+                  class="link-text-toggle"
+                  id="shrinkMe7MoreLink"
+                  href="#!"
+                  onclick="showMore('shrinkMe7');"
+                >
+                  Read more</a
+                >
+                <a
+                  class="link-text-toggle hidden"
+                  id="shrinkMe7LessLink"
+                  href="#!"
+                  onclick="showLess('shrinkMe7');"
+                  >less</a
+                >
+              </p>
             </div>
           </div>
         </div>
       </div>
-
-      <a href="#" class="slider__control" data-slide="prev"></a>
-      <a href="#" class="slider__control" data-slide="next"></a>
     </div>
-
-    <!-- Вперед и назад кнопки -->
-    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
-    <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-
-    <!-- <button class="prev" type="button" onclick="plusSlides(-1)">
-      <svg class="reviews__slides-arrow">
-        <use href="./images/icons.svg#icon-arrow-prev"></use>
-      </svg>
-    </button>
-
-    <button class="next" type="button" onclick="plusSlides(1)">
-      <svg class="reviews__slides-arrow">
-        <use href="./images/icons.svg#icon-arrow-next"></use>
-      </svg>
-    </button> -->
-
-    <!-- Текст изображения -->
-
-    <!-- Миниатюры -->
-    <!-- <div class="row">
-      <div class="column">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/volodymyr/volodymyr-min-icon.webp      1x,
-              ./images/reviews/volodymyr/volodymyr-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/volodymyr/volodymyr-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/volodymyr/volodymyr-min-icon.png      1x,
-              ./images/reviews/volodymyr/volodymyr-min-icon@1.5x.png 1.5x,
-              ./images/reviews/volodymyr/volodymyr-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" onclick="currentSlide(1)" alt="volodymyr" />
-        </picture>
-      </div>
-      <div class="column">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/emma/emma-min-icon.webp      1x,
-              ./images/reviews/emma/emma-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/emma/emma-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/emma/emma-min-icon.png      1x,
-              ./images/reviews/emma/emma-min-icon@1.5x.png 1.5x,
-              ./images/reviews/emma/emma-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" onclick="currentSlide(2)" alt="emma" />
-        </picture>
-      </div>
-      <div class="column">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/ihor/ihor-min-icon.webp      1x,
-              ./images/reviews/ihor/ihor-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/ihor/ihor-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/ihor/ihor-min-icon.png      1x,
-              ./images/reviews/ihor/ihor-min-icon@1.5x.png 1.5x,
-              ./images/reviews/ihor/ihor-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" onclick="currentSlide(3)" alt="ihor" />
-        </picture>
-      </div>
-      <div class="column">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/maryna/maryna-min-icon.webp      1x,
-              ./images/reviews/maryna/maryna-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/maryna/maryna-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/maryna/maryna-min-icon.png      1x,
-              ./images/reviews/maryna/maryna-min-icon@1.5x.png 1.5x,
-              ./images/reviews/maryna/maryna-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" onclick="currentSlide(4)" alt="maryna" />
-        </picture>
-      </div>
-      <div class="column">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/valeria/valeria-min-icon.webp      1x,
-              ./images/reviews/valeria/valeria-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/valeria/valeria-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/valeria/valeria-min-icon.png      1x,
-              ./images/reviews/valeria/valeria-min-icon@1.5x.png 1.5x,
-              ./images/reviews/valeria/valeria-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" onclick="currentSlide(5)" alt="valeria" />
-        </picture>
-      </div>
-      <div class="column">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/viktoria/viktoria-min-icon.webp      1x,
-              ./images/reviews/viktoria/viktoria-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/viktoria/viktoria-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/viktoria/viktoria-min-icon.png      1x,
-              ./images/reviews/viktoria/viktoria-min-icon@1.5x.png 1.5x,
-              ./images/reviews/viktoria/viktoria-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" onclick="currentSlide(6)" alt="viktoria" />
-        </picture>
-      </div>
-      <div class="column">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/vitaliyk/vitaliyk-min-icon.webp      1x,
-              ./images/reviews/vitaliyk/vitaliyk-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/vitaliyk/vitaliyk-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/vitaliyk/vitaliyk-min-icon.png      1x,
-              ./images/reviews/vitaliyk/vitaliyk-min-icon@1.5x.png 1.5x,
-              ./images/reviews/vitaliyk/vitaliyk-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" onclick="currentSlide(7)" alt="vitaliyk" />
-        </picture>
-      </div>
-      <div class="column">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/vitaliys/vitaliys-min-icon.webp      1x,
-              ./images/reviews/vitaliys/vitaliys-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/vitaliys/vitaliys-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/vitaliys/vitaliys-min-icon.png      1x,
-              ./images/reviews/vitaliys/vitaliys-min-icon@1.5x.png 1.5x,
-              ./images/reviews/vitaliys/vitaliys-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" onclick="currentSlide(8)" alt="vitaliys" />
-        </picture>
-      </div>
-    </div> -->
-
-    <ol class="slider__indicators">
-      <li data-slide-to="0">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/volodymyr/volodymyr-min-icon.webp      1x,
-              ./images/reviews/volodymyr/volodymyr-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/volodymyr/volodymyr-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/volodymyr/volodymyr-min-icon.png      1x,
-              ./images/reviews/volodymyr/volodymyr-min-icon@1.5x.png 1.5x,
-              ./images/reviews/volodymyr/volodymyr-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" alt="volodymyr" />
-        </picture>
-      </li>
-      <li data-slide-to="1">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/emma/emma-min-icon.webp      1x,
-              ./images/reviews/emma/emma-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/emma/emma-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/emma/emma-min-icon.png      1x,
-              ./images/reviews/emma/emma-min-icon@1.5x.png 1.5x,
-              ./images/reviews/emma/emma-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" onclick="currentSlide(2)" alt="emma" />
-        </picture>
-      </li>
-      <li data-slide-to="2">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/ihor/ihor-min-icon.webp      1x,
-              ./images/reviews/ihor/ihor-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/ihor/ihor-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/ihor/ihor-min-icon.png      1x,
-              ./images/reviews/ihor/ihor-min-icon@1.5x.png 1.5x,
-              ./images/reviews/ihor/ihor-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" alt="ihor" />
-        </picture>
-      </li>
-      <li data-slide-to="3">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/maryna/maryna-min-icon.webp      1x,
-              ./images/reviews/maryna/maryna-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/maryna/maryna-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/maryna/maryna-min-icon.png      1x,
-              ./images/reviews/maryna/maryna-min-icon@1.5x.png 1.5x,
-              ./images/reviews/maryna/maryna-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" alt="maryna" />
-        </picture>
-      </li>
-      <li data-slide-to="4">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/valeria/valeria-min-icon.webp      1x,
-              ./images/reviews/valeria/valeria-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/valeria/valeria-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/valeria/valeria-min-icon.png      1x,
-              ./images/reviews/valeria/valeria-min-icon@1.5x.png 1.5x,
-              ./images/reviews/valeria/valeria-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" alt="valeria" />
-        </picture>
-      </li>
-      <li data-slide-to="5">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/viktoria/viktoria-min-icon.webp      1x,
-              ./images/reviews/viktoria/viktoria-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/viktoria/viktoria-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/viktoria/viktoria-min-icon.png      1x,
-              ./images/reviews/viktoria/viktoria-min-icon@1.5x.png 1.5x,
-              ./images/reviews/viktoria/viktoria-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" alt="viktoria" />
-        </picture>
-      </li>
-      <li data-slide-to="6">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/vitaliyk/vitaliyk-min-icon.webp      1x,
-              ./images/reviews/vitaliyk/vitaliyk-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/vitaliyk/vitaliyk-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/vitaliyk/vitaliyk-min-icon.png      1x,
-              ./images/reviews/vitaliyk/vitaliyk-min-icon@1.5x.png 1.5x,
-              ./images/reviews/vitaliyk/vitaliyk-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" alt="vitaliyk" />
-        </picture>
-      </li>
-      <li data-slide-to="7">
-        <picture>
-          <source
-            srcset="
-              ./images/reviews/vitaliys/vitaliys-min-icon.webp      1x,
-              ./images/reviews/vitaliys/vitaliys-min-icon@1.5x.webp 1.5x,
-              ./images/reviews/vitaliys/vitaliys-min-icon@2x.webp   2x
-            "
-            type="image/webp"
-          />
-
-          <source
-            srcset="
-              ./images/reviews/vitaliys/vitaliys-min-icon.png      1x,
-              ./images/reviews/vitaliys/vitaliys-min-icon@1.5x.png 1.5x,
-              ./images/reviews/vitaliys/vitaliys-min-icon@2x.png   2x
-            "
-          />
-          <img class="demo cursor" src="#" alt="vitaliys" />
-        </picture>
-      </li>
-    </ol>
   </div>
 </article>

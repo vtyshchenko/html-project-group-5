@@ -71,15 +71,6 @@
     margin-bottom: 20px;
     border: none;
   }
-
-  &__slides-arrow {
-    display: block;
-    width: 25px;
-    height: 20px;
-    border: none;
-    outline: none;
-    fill: currentColor;
-  }
 }
 
 .slides {
@@ -125,7 +116,7 @@
   }
 
   &__graduated {
-    min-width: 240px;
+    min-width: 200px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -137,14 +128,14 @@
     color: #b9b9b9;
     margin: 0 auto 25px auto;
 
-    @media screen and (min-width: $mobile) {
-      width: 440px;
-    }
+    // @media screen and (min-width: $mobile) {
+    //   width: 440px;
+    // }
 
     @media screen and (min-width: $tablet) {
       text-align: left;
       line-height: 15 / 12 * 100%;
-      width: 412px;
+      //   width: 412px;
       margin: 0 0 25px 0;
     }
 
@@ -158,7 +149,7 @@
   }
 
   &__biography {
-    min-width: 240px;
+    // min-width: 200px;
     font-weight: 500;
     font-size: 12px;
     line-height: 20 / 12 * 100%;
@@ -167,13 +158,13 @@
     color: #3d3d3d;
     margin: 0 auto 40px auto;
 
-    @media screen and (min-width: $mobile) {
-      width: 440px;
-    }
+    // @media screen and (min-width: $mobile) {
+    //   width: 440px;
+    // }
 
     @media screen and (min-width: $tablet) {
       text-align: left;
-      width: 412px;
+      //   width: 536px;
       margin: 0;
     }
 
@@ -186,79 +177,79 @@
   }
 }
 
-* {
-  box-sizing: border-box;
-}
+// // * {
+// //   box-sizing: border-box;
+// // }
 
-/* Добавить указатель при наведении на миниатюры изображений */
-.cursor {
-  cursor: pointer;
-}
+// // /* Добавить указатель при наведении на миниатюры изображений */
+// // .cursor {
+// //   cursor: pointer;
+// // }
 
-/* Вперед и предыдущие кнопки */
-.prev,
-.next {
-  background-color: white;
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  color: $accent-color;
+// // /* Вперед и предыдущие кнопки */
+// // .prev,
+// // .next {
+// //   background-color: white;
+// //   border: none;
+// //   text-align: center;
+// //   text-decoration: none;
+// //   display: inline-block;
+// //   color: $accent-color;
 
-  cursor: pointer;
-  position: absolute;
-  bottom: 1%;
-  width: auto;
-  padding: 12px 0;
-  margin-top: -50px;
-  border-radius: 50%;
-}
+// //   cursor: pointer;
+// //   position: absolute;
+// //   bottom: 1%;
+// //   width: auto;
+// //   padding: 12px 0;
+// //   margin-top: -50px;
+// //   border-radius: 50%;
+// // }
 
-/* Позиция "next кнопка" на право */
-.next {
-  right: 0;
-  margin-right: 20px;
-}
+// // /* Позиция "next кнопка" на право */
+// // .next {
+// //   right: 0;
+// //   margin-right: 20px;
+// // }
 
-/* При наведении курсора добавьте черный цвет фона с небольшим количеством прозрачного */
-.prev:hover,
-.next:hover {
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
-}
+// // /* При наведении курсора добавьте черный цвет фона с небольшим количеством прозрачного */
+// // .prev:hover,
+// // .next:hover {
+// //   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+// // }
 
-.row {
-  padding-right: 44px;
-  padding-left: 44px;
-  width: 290px;
-  margin: 0 auto;
-}
+// // .row {
+// //   padding-right: 44px;
+// //   padding-left: 44px;
+// //   width: 290px;
+// //   margin: 0 auto;
+// // }
 
-.row:after {
-  content: '';
-  display: table;
-  clear: both;
-}
+// // .row:after {
+// //   content: '';
+// //   display: table;
+// //   clear: both;
+// // }
 
-/* Шесть колонн бок о бок */
-.column {
-  float: left;
-  margin-right: 10px;
-}
+// // /* Шесть колонн бок о бок */
+// // .column {
+// //   float: left;
+// //   margin-right: 10px;
+// // }
 
-/* Добавить эффект прозрачности для миниатюрных изображений */
-.demo {
-  opacity: 0.6;
-  width: 54px;
-}
+// // /* Добавить эффект прозрачности для миниатюрных изображений */
+// // .demo {
+// //   opacity: 0.6;
+// //   width: 54px;
+// // }
 
-.active {
-  width: 64px;
-}
+// // .active {
+// //   width: 64px;
+// // }
 
-.active,
-.demo:hover {
-  opacity: 1;
-}
+// // .active,
+// // .demo:hover {
+// //   opacity: 1;
+// // }
 
 .hidden {
   display: none;
