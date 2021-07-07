@@ -11,7 +11,7 @@
   @media screen and (min-width: $desktop) {
     background: url(../images/campfire.svg),
       linear-gradient(to bottom, $main-text-color 73%, $accent-text-color 32%);
-    background-position: 1144px 121px, 0px;
+    background-position: right 0px bottom 208px, 0px;
     background-repeat: no-repeat;
     padding-top: 100px;
     padding-bottom: 65px;
@@ -96,7 +96,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    width: calc((100% - 2 * 22px) / 2);
+    width: calc((100% - 2 * 39px) / 2);
   }
   &:not(:nth-last-child(-n + 2)) {
     @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
@@ -113,7 +113,7 @@
   }
 }
 .problems-grid__item:nth-child(5) {
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: $mobile-min) {
     width: 209px;
   }
 }
