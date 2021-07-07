@@ -31,6 +31,7 @@
     background-image: url('../images/registration/registration-tablet@2x.png');
   }
   @media screen and (min-width: $desktop) {
+    max-width: 1680px;
     height: 840px;
     background-image: url('../images/registration/registration-desktop.png');
   }
@@ -118,6 +119,8 @@
   &__input {
     min-width: 280px;
     height: 48px;
+    color: $accent-text-color;
+    background: inherit;
     border: 1px solid $accent-text-color;
     font-family: $font-family-montserrat;
     font-style: normal;
@@ -128,7 +131,8 @@
     padding-left: 28px;
     outline: none;
 
-    &:focus {
+    &:focus,
+    &:hover {
       outline: none;
       border-color: $accent-color;
     }
