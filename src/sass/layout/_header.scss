@@ -62,6 +62,18 @@
       display: flex;
       align-items: center;
     }
+
+    &__button {
+      background-color: transparent;
+      color: $accent-color;
+
+      &:focus,
+      &:hover,
+      &:active {
+        color: $accent-text-color;
+        background-color: $accent-color;
+      }
+    }
   }
 }
 
