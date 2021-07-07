@@ -126,6 +126,11 @@
       line-height: 1.4;
       padding-top: 60px;
     }
+    &:hover::before,
+    &:focus::before {
+      background-color: $color-white;
+      transform: scale(1.5);
+    }
   }
   &__item:not(:last-child) {
     @media screen and (max-width: $desktop - 1px) {
@@ -143,6 +148,7 @@
     height: 12px;
     background-color: $accent-color;
     border-radius: 50%;
+    transition: transform 500ms $anim-timing-function, background-color 500ms $anim-timing-function;
     @media screen and (min-width: $desktop) {
       top: -12px;
       left: 0px;
