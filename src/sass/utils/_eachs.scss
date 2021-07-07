@@ -1,0 +1,5 @@
+@each $icon in instagram, twitter, facebook, linkedin {
+  .#{$icon}__social {
+    background-image: url('../images/social/#{$icon}.png');
+  }
+}
