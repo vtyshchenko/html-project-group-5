@@ -24,7 +24,10 @@
       justify-content: space-between;
     }
   }
-
+  &__social-contacts {
+    display: flex;
+    justify-content: space-between;
+  }
   &__phone {
     display: block;
     font-family: $font-family-montserrat;
@@ -79,6 +82,14 @@
       margin-right: 290px;
     }
   }
+  &__social-contacts__item:not(:last-child) {
+    @media screen and (min-width: $tablet) {
+      padding-right: 10px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-right: 15px;
+    }
+  }
 }
 
 .phone__icon {
@@ -100,11 +111,17 @@
 
 .social-contacts__link {
   display: block;
-  background-image: url(../images/instagram.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 40px;
   height: 40px;
   margin: auto;
+}
+.icon__social {
+  @each $icon in instagram, twitter, facebook, linkedin {
+    .#{$icon}__social {
+      background-image: url('../images/social/#{$icon}.png');
+    }
+  }
 }
