@@ -1,5 +1,9 @@
 .reviews {
-  padding: 50px 0 50px 0;
+  padding: 50px 0;
+
+  @media screen and (min-width: $desktop) {
+    padding: 130px 0;
+  }
 
   &__title {
     display: block;
@@ -48,26 +52,32 @@
       margin-bottom: 30px;
     }
     @media screen and (min-width: $desktop) {
-      padding: 50px 100px;
+      padding: 50px 112px 51px 82px;
       margin-bottom: 40px;
-    }
-  }
-
-  &__slide-contscts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 0px;
-
-    @media screen and (min-width: $tablet) {
-      margin-right: 46px;
+      background: #ffffff;
+      box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
     }
   }
 
   &__slide-image {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 31px;
     border: none;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 27px;
+    }
+  }
+
+  &__slide-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 31px;
+
+    @media screen and (min-width: $tablet) {
+      margin-right: 46px;
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -75,11 +85,10 @@
   /* Контейнер для текста изображения */
   &__caption-container {
     text-align: center;
-    padding: 0 20px;
+    padding: 0;
 
     @media screen and (min-width: $tablet) {
       text-align: left;
-      padding: 0;
     }
   }
 
@@ -90,17 +99,19 @@
     text-align: center;
     letter-spacing: 0.08em;
     color: $accent-color;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 
     @media screen and (min-width: $tablet) {
       font-size: 20px;
       line-height: 24 / 20 * 100%;
       text-align: left;
+      margin-bottom: 20px;
     }
 
     @media screen and (min-width: $desktop) {
       font-size: 30px;
       line-height: 37 / 30 * 100%;
+      margin-bottom: 10px;
     }
   }
 
@@ -115,7 +126,7 @@
     letter-spacing: 0.08em;
 
     color: #b9b9b9;
-    margin: 0 auto 25px auto;
+    margin: 0 auto 16px auto;
 
     // @media screen and (min-width: $mobile) {
     //   width: 440px;
@@ -133,7 +144,6 @@
       text-align: left;
       line-height: 17 / 14 * 100%;
       width: 468px;
-      margin: 0 0 20px 0;
     }
   }
 
@@ -145,11 +155,17 @@
     letter-spacing: 0.01em;
     text-align: center;
     color: #3d3d3d;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
+
+    width: 240px;
+
+    @media screen and (min-width: $mobile-min + 1px) {
+      min-width: 240px;
+    }
 
     @media screen and (min-width: $mobile) {
       display: block;
-      width: 400px;
+      width: 412px;
     }
 
     @media screen and (min-width: $tablet) {
