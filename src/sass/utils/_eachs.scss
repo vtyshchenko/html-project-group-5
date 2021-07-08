@@ -1,5 +1,10 @@
-@each $icon in instagram, twitter, facebook, linkedin {
+@each $icon in twitter, facebook, linkedin {
   .#{$icon}__social {
-    background-image: url('../images/social/#{$icon}.png');
+    background-image: url('../images/social/#{$icon}.svg');
+    border-radius: 20%;
+    &:focus,
+    &:hover {
+      fill: $accent-color;
+    }
   }
 }
