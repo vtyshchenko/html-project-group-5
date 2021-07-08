@@ -68,6 +68,11 @@
   color: $accent-color;
 }
 
+.button__hero {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
 @media screen and (min-width: $tablet) {
   .hero {
     background-image: url(../images/hero/hero-shadow-line-tablet.png);
@@ -158,6 +163,11 @@
   .description__decor-three {
     font-size: 20px;
     line-height: 1.65;
+  }
+
+  .button__hero {
+    padding-top: 27px;
+    padding-bottom: 26px;
   }
 }
 
