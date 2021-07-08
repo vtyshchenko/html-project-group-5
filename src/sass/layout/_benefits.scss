@@ -10,7 +10,7 @@
     transform: translate(-384px, 444px);
   }
   @media screen and (min-width: $desktop) {
-    transform: translate(-683px, 398px);
+    transform: translate(-683px, 411px);
   }
   &__container {
     @media screen and (min-width: $desktop) {
@@ -58,7 +58,7 @@
       padding: 35px 118px 40px 98px;
     }
     @media screen and (min-width: $desktop) {
-      padding: 70px 84px 70px 82px;
+      padding: 70px 82px 70px 84px;
     }
   }
   &__item {
