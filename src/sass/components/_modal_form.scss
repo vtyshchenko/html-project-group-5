@@ -1,0 +1,54 @@
+.modal-wrapper {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  transition: opacity $anim-duration $anim-timing-function,
+    transform $anim-duration $anim-timing-function;
+
+  @media screen and (max-width: $desktop - 1px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+  }
+}
+
+.modal__button {
+  position: absolute;
+  @extend %flex__center;
+  color: $color-black;
+  background-color: $color-white;
+  padding: 0;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid $modal-button-border-color;
+  cursor: pointer;
+  z-index: 102;
+  transform: rotateZ(360deg);
+  transition: transform $anim-duration $anim-timing-function,
+    color $anim-duration $anim-timing-function;
+
+  .modal__icon {
+    @include settings__icons(currentColor, 18px, 18px);
+  }
+
+  &:hover {
+    color: $accent-color;
+    transform: rotateZ(0deg);
+  }
+
+  @media screen and (max-width: $desktop - 1px) {
+    top: 8px;
+    right: 8px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: calc(50% - 283px);
+    left: calc(50% + 226px);
+  }
+}

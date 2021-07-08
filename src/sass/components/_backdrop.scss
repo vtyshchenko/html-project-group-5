@@ -1,0 +1,28 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 1100;
+  background-color: $backdrop-color;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+
+  transition: opacity $anim-duration $anim-timing-function,
+    visibility $anim-duration $anim-timing-function;
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  &.is-hidden .button-close {
+    transform: scale(0.8);
+  }
+}
