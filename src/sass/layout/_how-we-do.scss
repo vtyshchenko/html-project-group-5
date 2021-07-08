@@ -136,8 +136,14 @@
       width: calc((100% - 40px) / 2);
       height: 334px;
       // padding: 40px 22px 0 22px;
-      margin-bottom: 0;
-      margin: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 17px;
+
+      &:nth-last-of-type(-n + 2) {
+        margin-bottom: 10px;
+      }
 
       &:nth-child(1) {
         padding: 40px 22px 5px 22px;
@@ -196,6 +202,7 @@
     &__item {
       width: calc((100% - 60px) / 3);
       height: 396px;
+      margin: 10px;
       // padding: 40px 35px 55px;
 
       &:nth-child(1) {
