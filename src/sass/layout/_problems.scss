@@ -114,7 +114,7 @@
 }
 .problems-grid__item:nth-child(5) {
   @media screen and (max-width: $mobile-min) {
-    width: 209px;
+    max-width: 209px;
   }
 }
 .problems-grid__text {
