@@ -18,6 +18,7 @@
     align-items: center;
     width: 100vw;
     margin: 0 auto;
+    padding: 0 $mobile-padding;
   }
 
   &__logo-link {
@@ -85,6 +86,7 @@
   .header {
     &__container {
       width: $tablet;
+      padding: 0 $tablet-padding;
     }
 
     &__content-wrapper {
