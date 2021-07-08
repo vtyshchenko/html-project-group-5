@@ -1,4 +1,4 @@
-const anchors = document.querySelectorAll('a[href*="#"]');
+const anchors = document.querySelectorAll('a[href*="#_"]');
 const mobilelinkClick = document.querySelector("[data-menu-close]");
 const mobileMenuRef = document.querySelector("[data-menu]");
     
