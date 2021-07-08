@@ -71,7 +71,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    padding-top: 37px;
+    padding-top: 30px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -100,7 +100,7 @@
   }
   &:not(:nth-last-child(-n + 2)) {
     @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
-      margin-bottom: 8px;
+      margin-bottom: 18px;
     }
   }
   @media screen and (min-width: $desktop) {
@@ -141,7 +141,7 @@
   top: -19px;
 
   @media screen and (min-width: $tablet) {
-    top: -27px;
+    top: -20px;
   }
 
   @media screen and (min-width: $desktop) {
