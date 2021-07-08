@@ -10,6 +10,8 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition: opacity $anim-duration $anim-timing-function,
+      visibility $anim-duration $anim-timing-function;
 
     &.is-open {
       opacity: 1;
@@ -17,9 +19,6 @@
       pointer-events: auto;
       z-index: 99;
     }
-
-    // &__container {
-    // }
 
     &__close-button {
       position: absolute;
@@ -61,7 +60,7 @@
       &:hover,
       &:focus,
       &:active {
-        color: $accent-text-color;
+        color: $accent-color;
       }
     }
 

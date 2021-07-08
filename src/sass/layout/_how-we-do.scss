@@ -12,12 +12,33 @@
   }
 
   &__item {
-    padding: 30px 5px 0 5px;
     text-align: center;
     background-color: $main-background-color;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
     transition: background-color $anim-duration $anim-timing-function,
       transform $anim-duration $anim-timing-function;
+    &:nth-child(1) {
+      padding: 30px 0;
+    }
+    &:nth-child(2) {
+      padding: 30px 12px 0 12px;
+    }
+
+    &:nth-child(3) {
+      padding: 30px 10px 27px 10px;
+    }
+
+    &:nth-child(4) {
+      padding: 30px 15px 22px 15px;
+    }
+
+    &:nth-child(5) {
+      padding: 30px 11px 24px 11px;
+    }
+
+    &:nth-child(6) {
+      padding: 30px 5px 0 5px;
+    }
 
     &:hover,
     &:focus {
@@ -41,20 +62,33 @@
   &__subtitle {
     font-weight: 700;
     font-size: 14px;
-    line-height: 2;
+    line-height: 1.43;
+    letter-spacing: 0.08em;
     transition: color $anim-duration $anim-timing-function;
 
     .how-we-do__item:hover &,
     .how-we-do__item:focus & {
       color: $accent-text-color;
     }
+  }
 
-    &::after {
+  &__text {
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.08em;
+    color: $secondary-text-color;
+    transition: color $anim-duration $anim-timing-function;
+
+    .how-we-do__item:hover &,
+    .how-we-do__item:focus & {
+      color: $accent-text-color;
+    }
+    &::before {
       display: block;
       content: '';
       width: 20px;
       height: 2px;
-      margin: 15px auto;
+      margin: 19px auto;
       background-color: $accent-color;
       transition: background-color $anim-duration $anim-timing-function;
 
@@ -64,22 +98,15 @@
       }
     }
   }
+}
 
-  &__text {
-    font-size: 12px;
-    color: $secondary-text-color;
-    transition: color $anim-duration $anim-timing-function;
-
-    .how-we-do__item:hover &,
-    .how-we-do__item:focus & {
-      color: $accent-text-color;
-    }
-  }
+.how-we-do__span {
+  display: block;
 }
 
 .icon-wrapper {
   @extend %flex__center;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: $tablet - 1px) {
@@ -96,8 +123,6 @@
 
 @media screen and (min-width: $tablet) {
   .how-we-do {
-    padding-bottom: 55px;
-
     &__title {
       font-size: 26px;
     }
@@ -110,21 +135,58 @@
     &__item {
       width: calc((100% - 40px) / 2);
       height: 334px;
-      padding: 40px 22px 0 22px;
-      margin-bottom: 0;
-      margin: 10px;
+      // padding: 40px 22px 0 22px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 17px;
+
+      &:nth-last-of-type(-n + 2) {
+        margin-bottom: 10px;
+      }
+
+      &:nth-child(1) {
+        padding: 40px 22px 5px 22px;
+      }
+      &:nth-child(2) {
+        padding: 40px 21px 30px 21px;
+      }
+
+      &:nth-child(3) {
+        padding: 40px 26px 28px 26px;
+      }
+
+      &:nth-child(4) {
+        padding: 40px 21px 23px 21px;
+      }
+
+      &:nth-child(5) {
+        padding: 41px 37px 48px 37px;
+      }
+
+      &:nth-child(6) {
+        padding: 40px 21px 40px 21px;
+      }
+    }
+    &__subtitle {
+      height: 38px;
     }
 
     &__text {
-      line-height: 2.33;
+      &::before {
+        margin: 25px auto;
+      }
+    }
+    .icon-wrapper {
+      margin-bottom: 30px;
     }
   }
 }
 
 @media screen and (min-width: $desktop) {
   .how-we-do {
-    padding-top: 94px;
-    padding-bottom: 75px;
+    padding-top: 65px;
+    padding-bottom: 130px;
 
     &__container {
       padding-left: 25.5px;
@@ -134,16 +196,41 @@
     &__title {
       font-size: 46px;
       text-align: left;
-      margin-bottom: 62px;
+      margin-bottom: 50px;
     }
 
     &__item {
       width: calc((100% - 60px) / 3);
       height: 396px;
-      padding: 40px 35px 55px;
+      margin: 10px;
+      // padding: 40px 35px 55px;
+
+      &:nth-child(1) {
+        padding: 40px 30px 55px 30px;
+      }
+      &:nth-child(2) {
+        padding: 40px 29px 55px 29px;
+      }
+
+      &:nth-child(3) {
+        padding: 40px 30px 55px 30px;
+      }
+
+      &:nth-child(4) {
+        padding: 40px 30px 55px 30px;
+      }
+
+      &:nth-child(5) {
+        padding: 41px 30px 55px 30px;
+      }
+
+      &:nth-child(6) {
+        padding: 40px 30px 55px 30px;
+      }
     }
 
     &__subtitle {
+      height: 53px;
       font-size: 20px;
       line-height: 1.4;
     }
@@ -151,10 +238,9 @@
     &__text {
       font-size: 18px;
       line-height: 1.56;
+      &::before {
+        margin: 15px auto;
+      }
     }
-  }
-
-  .icon-wrapper {
-    margin-bottom: 30px;
   }
 }

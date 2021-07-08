@@ -53,6 +53,10 @@
       font-size: 30px;
       padding-right: 16px;
     }
+    &:focus,
+    &:hover {
+      color: $accent-color;
+    }
   }
 
   &__copyright {
@@ -107,6 +111,10 @@
     height: 30px;
     margin-right: 15px;
   }
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+  }
 }
 
 .social-contacts__link {
@@ -118,10 +126,24 @@
   height: 40px;
   margin: auto;
 }
+.instagram__social {
+  background-image: url('../images/social/instagram.svg');
+
+  &:focus,
+  &:hover {
+    fill: $accent-color;
+  }
+}
+
 .icon__social {
-  @each $icon in instagram, twitter, facebook, linkedin {
+  @each $icon in twitter, facebook, linkedin {
     .#{$icon}__social {
-      background-image: url('../images/social/#{$icon}.png');
+      background-image: url('../images/social/#{$icon}.svg');
+      border-radius: 20%;
+      &:focus,
+      &:hover {
+        fill: $accent-color;
+      }
     }
   }
 }

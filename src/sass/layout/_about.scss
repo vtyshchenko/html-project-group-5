@@ -90,14 +90,19 @@
 
 .about__item {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 
   &:not(:last-child) {
     margin-bottom: 20px;
+    align-items: baseline;
 
     @media screen and (min-width: $tablet) {
       margin-bottom: 27px;
+      align-items: flex-start;
     }
+  }
+  @media screen and (min-width: $desktop) {
+    align-items: flex-end;
   }
 }
 
@@ -105,8 +110,8 @@
   display: inline-block;
   content: '';
   background-image: url('../images/check-mark.svg');
-  min-width: 17.08px;
-  max-width: 17.08px;
+  min-width: 17px;
+  max-width: 17px;
   height: 14px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -145,7 +150,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    margin-bottom: 33px;
+    margin-bottom: 45px;
   }
 
   &::before {
@@ -165,6 +170,7 @@
 
 .about__education-item {
   font-size: 12px;
+  line-height: 1.67;
   color: $secondary-text-color;
   letter-spacing: normal;
 
@@ -178,6 +184,13 @@
     &:not(:last-child) {
       margin-bottom: 25px;
     }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .about__education-span {
+    display: block;
+    margin-top: 25px;
   }
 }
 

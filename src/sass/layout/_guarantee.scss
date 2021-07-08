@@ -1,16 +1,18 @@
 .guarantee {
   padding-top: 25px;
 
+  @media screen and (max-width: $tablet - 1px) {
+    background-image: linear-gradient(
+      180deg,
+      #fff 0,
+      #fff 17%,
+      hsla(0, 0%, 94.5%, 0.95) 0,
+      hsla(0, 0%, 94.5%, 0.95)
+    );
+  }
+
   @media screen and (min-width: $desktop) {
     padding-top: 65px;
-  }
-}
-
-.guarantee .container {
-  background-color: $garantee-background-color;
-
-  @media screen and (min-width: $tablet) {
-    background-color: $main-background-color;
   }
 }
 
@@ -36,14 +38,66 @@
 
 .guarantee__list {
   padding: 50px 0 51px;
-  background-color: $garantee-background-color;
 
   @media screen and (min-width: $tablet) {
-    padding: 30px 19px 30px 80px;
+    background-color: $garantee-background-color;
+    padding: 30px 50px 30px 80px;
   }
   @media screen and (min-width: $desktop) {
-    padding: 50px 72px 45px 112px;
+    padding: 50px 112px 45px 112px;
   }
+}
+
+.guarantee__item {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 18px;
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 32px;
+    padding-right: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 42px;
+  }
+}
+
+.guarantee__item:not(:last-child) {
+  border-left: 1px dashed $secondary-text-color;
+  padding-bottom: 18px;
+  margin-bottom: 5px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+  }
+}
+
+.guarantee__item::before {
+  content: '';
+
+  width: 15px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: -8px;
+  justify-content: center;
+  background-image: url(../images/fire.svg);
+  background-color: $garantee-background-color;
+  background-repeat: no-repeat;
+  transition: transform $anim-duration $anim-timing-function;
+
+  @media screen and (min-width: $desktop) {
+    width: 22px;
+    height: 35px;
+    left: -12px;
+    background-size: contain;
+  }
+}
+
+.guarantee__item:hover::before {
+  transform: scale(1.2);
 }
 
 .guarantee__text {
@@ -52,7 +106,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.666;
-  letter-spacing: 0.03em;
+  letter-spacing: normal;
 
   color: #3d3d3d;
 
@@ -64,53 +118,4 @@
 
 .guarantee__text-color {
   color: $accent-color;
-}
-
-.guarantee__item {
-  position: relative;
-  padding-left: 20px;
-
-  @media screen and (min-width: $tablet) {
-    padding-left: 32px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    padding-left: 42px;
-  }
-}
-
-.guarantee__item:not(:last-child) {
-  border-left: 1px dashed $secondary-text-color;
-  padding-bottom: 23px;
-
-  @media screen and (min-width: $tablet) {
-    padding-bottom: 20px;
-  }
-}
-
-.guarantee__item::before {
-  content: '';
-
-  width: 15px;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  left: -8px;
-  justify-content: center;
-  background-image: url(../images/fire.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media screen and (min-width: $desktop) {
-    width: 22px;
-    height: 30px;
-    left: -12px;
-  }
-}
-
-@media screen and (min-width: $desktop) {
-  .guarantee__container {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
 }
