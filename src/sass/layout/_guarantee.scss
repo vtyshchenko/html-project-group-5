@@ -51,9 +51,11 @@
 .guarantee__item {
   position: relative;
   padding-left: 20px;
+  padding-right: 18px;
 
   @media screen and (min-width: $tablet) {
     padding-left: 32px;
+    padding-right: 0;
   }
 
   @media screen and (min-width: $desktop) {
