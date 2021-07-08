@@ -2,7 +2,7 @@
   position: relative;
   // max-width: 320px;
   width: 100vw;
-  padding: 0 20px;
+  padding: 0 $mobile-padding;
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
@@ -12,12 +12,12 @@
   @media screen and (min-width: $tablet) {
     width: $tablet;
 
-    padding: 0 40px;
+    padding: 0 $tablet-padding;
   }
 
   @media screen and (min-width: $desktop) {
     width: $desktop;
 
-    padding: 0 25px;
+    padding: 0 $desktop-padding;
   }
 }
