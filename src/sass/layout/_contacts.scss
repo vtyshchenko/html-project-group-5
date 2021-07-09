@@ -170,3 +170,12 @@
     border: 3px solid #ff0000;
   }
 }
+
+.button__lesson {
+  animation: fadeInTopLeft;
+  animation-duration: 3s;
+  .animate__animated.animate__fadeInTopLeft {
+    --animate-repeat: 1;
+    --animate-delay: 1s;
+  }
+}
