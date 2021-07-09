@@ -57,6 +57,11 @@
     &:hover {
       color: $accent-color;
     }
+    &:focus .phone__icon,
+    &:hover .phone__icon {
+      fill: orangered;
+      transform: scale(1.5);
+    }
   }
 
   &__copyright {
@@ -101,6 +106,13 @@
   height: 20px;
   fill: $accent-color;
   margin-right: 10px;
+
+  animation: swing;
+  animation-duration: 5s;
+  .animate__animated.animate__swing {
+    --animate-repeat: 5;
+    --animate-delay: 1s;
+  }
   transition: transform $anim-duration $anim-timing-function;
 
   @media screen and (min-width: $tablet) {
