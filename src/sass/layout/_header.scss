@@ -10,6 +10,7 @@
     background-color: $main-background-color;
     position: fixed;
     z-index: 1001;
+    border-bottom: 1px solid $secondary-text-color;
   }
 
   &__container {
@@ -22,8 +23,8 @@
   }
 
   &__logo-link {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   &__mobile-burger-button {
@@ -54,8 +55,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      // width: $mobile;
-      width: 100%;
+      width: $mobile;
+      // width: 100%;
       padding: 0 $mobile-padding;
     }
   }
@@ -90,6 +91,11 @@
       padding: 0 $tablet-padding;
     }
 
+    &__logo-link {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
     &__content-wrapper {
       display: flex;
       align-items: center;
@@ -116,6 +122,11 @@
       width: $desktop;
       padding: 0 $desktop-padding;
       margin: 0 auto;
+    }
+
+    &__logo-link {
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
 
     &__mobile-burger-button {
