@@ -32,6 +32,24 @@
   }
 }
 
+.pulsation {
+  animation: beat 1000ms infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 // 768+
 @media screen and (min-width: $tablet) {
   .logo {
