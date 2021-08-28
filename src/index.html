@@ -74,21 +74,6 @@
         document.getElementById(id + 'LessLink').className = 'link-text-toggle hidden';
       }
 
-      var len = 1000;
-      var shrinkables = document.getElementsByClassName('shrinkable');
-      if (shrinkables.length > 0) {
-        for (var i = 0; i < shrinkables.length; i++) {
-          var fullText = shrinkables[i].innerHTML;
-          if (fullText.length > len) {
-            var trunc = fullText.substring(0, len).replace(/\w+$/, '');
-            var remainder = '';
-            var id = shrinkables[i].id;
-            remainder = fullText.substring(len, fullText.length);
-          }
-        }
-      }
-    </script>
-    <script>
       $(document).ready(function () {
         $('.slider')
           .not('.slick-initialized')
