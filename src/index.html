@@ -53,27 +53,15 @@
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/menu-mobile.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu-mobile.js"></script>
+    <script src="./js/main.js"></script>
     <script src="./js/scroll-by-anchors.js"></script>
 
     <script>
-      function showMore(id) {
-        document.getElementById(id + 'Overflow').className = '';
-        document.getElementById(id + 'MoreLink').className = 'link-text-toggle hidden';
-        document.getElementById(id + 'dots').className = 'hidden';
-        document.getElementById(id + 'LessLink').className = 'link-text-toggle';
-      }
-
-      function showLess(id) {
-        document.getElementById(id + 'Overflow').className = 'hidden';
-        document.getElementById(id + 'MoreLink').className = 'link-text-toggle';
-        document.getElementById(id + 'LessLink').className = 'link-text-toggle hidden';
-      }
-
       $(document).ready(function () {
         $('.slider')
           .not('.slick-initialized')
